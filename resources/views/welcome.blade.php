@@ -60,9 +60,9 @@
     <!-- Page Content -->
     <div id="content" class="flex-grow-1">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success shadow-sm">
             <div class="container-fluid">
-                <button class="btn btn-outline-primary me-3" id="sidebarToggle">☰</button>
+                <button class="btn btn-outline-light me-2" id="sidebarToggle">☰</button>
                 <a class="navbar-brand fw-bold" href="#">Badan Sosial Kematian</a>
             </div>
         </nav>
@@ -96,7 +96,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-success text-white">Data Keluarga</div>
+                        <div class="card-header bg-primary text-white">Data Keluarga</div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">
                                 <thead>
@@ -116,7 +116,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-warning text-dark">Rekap Saldo Masuk/Keluar</div>
+                        <div class="card-header bg-primary text-light">Rekap Saldo Masuk/Keluar</div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">
                                 <thead>
@@ -138,7 +138,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-info text-white">Inventaris</div>
+                        <div class="card-header bg-primary text-white">Inventaris</div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">
                                 <thead>
