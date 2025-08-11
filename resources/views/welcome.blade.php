@@ -12,8 +12,8 @@
         }
         /* Sidebar */
         #sidebar {
-            min-width: 250px;
-            max-width: 250px;
+            min-width: 260px;
+            max-width: 260px;
             min-height: 100vh;
             background: #343a40;
             color: #fff;
@@ -23,7 +23,7 @@
             color: #fff;
         }
         #sidebar.collapsed {
-            margin-left: -250px;
+            margin-left: -260px;
         }
         /* Content */
         #content {
@@ -46,8 +46,8 @@
     <!-- Sidebar -->
     <div id="sidebar" class="bg-dark">
         <div class="p-3">
-            <h4 class="text-white">BSK Dashboard</h4>
-            <nav class="nav flex-column">
+            <h4 class="text-white mt-3">BSK Dashboard</h4>
+            <nav class="nav flex-column mt-2">
                 <a class="nav-link" href="#">Beranda</a>
                 <a class="nav-link" href="#">Monitoring Pembayaran</a>
                 <a class="nav-link" href="#">Keluarga</a>
