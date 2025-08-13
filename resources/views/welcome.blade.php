@@ -29,6 +29,40 @@
         #content {
             transition: all 0.3s;
         }
+        .card {
+            min-height: 250px; /* bebas sesuai kebutuhan */
+        }
+        .table-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 200px; /* tinggi tetap card */            
+        }
+        .table-scroll {
+            flex: 1;
+            overflow-y: auto; /* hanya bagian tabel yang scroll */            
+        }
+
+        .table-scroll table {
+            border: 1px solid #ccc;      /* garis tepi tabel */
+            border-collapse: collapse;   /* rapetin garis */
+            width: 95%;                  /* lebar tabel diperkecil */
+            margin: 0 auto;              /* tengahin tabel */
+        }
+
+        .table-scroll th,
+        .table-scroll td {
+            border: 1px solid #ccc;      /* garis tiap sel */
+            padding: 6px 10px;           /* jarak isi sel */
+        }
+
+        .filter-bar {
+            background: white; /* biar nggak transparan saat scroll */
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
         /* Footer */
         footer {
             background: #f8f9fa;
@@ -45,9 +79,9 @@
 <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar" class="bg-dark">
-        <div class="p-3">
-            <h4 class="text-white mt-3">BSK Dashboard</h4>
-            <nav class="nav flex-column mt-2">
+        <div class="p-2">
+            <h4 class="text-white mt-2 text-center">BSK Dashboard</h4>
+            <nav class="nav flex-column pt-3">
                 <a class="nav-link" href="#">Beranda</a>
                 <a class="nav-link" href="#">Monitoring Pembayaran</a>
                 <a class="nav-link" href="#">Keluarga</a>
@@ -76,20 +110,102 @@
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
                         <div class="card-header bg-primary text-white">Monitoring Pembayaran</div>
-                        <div class="card-body p-0">
-                            <table class="table table-striped mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>Bulan</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Contoh 1</td><td>Januari</td><td>Lunas</td></tr>
-                                    <tr><td>Contoh 2</td><td>Februari</td><td>Belum</td></tr>
-                                </tbody>
-                            </table>
+                        <div class="table-wrapper">
+                            <!-- Filter Bar -->
+                            <div class="filter-bar">
+                                <div class="row g-2">
+                                    <div class="col-md-4">
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select id="statusFilter" class="form-select">
+                                            <option value="">RT/RW</option>
+                                            <option value="01/04">01/04</option>                                            
+                                            <option value="02/04">02/04</option>                                            
+                                            <option value="03/04">03/04</option>                                            
+                                            <option value="03/03">03/03</option>                                            
+                                            <option value="RW05">RW 05</option>                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select id="statusFilter" class="form-select">
+                                            <option value="">Status</option>
+                                            <option value="Lunas">Lunas</option>
+                                            <option value="Belum">Belum</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Scrollable Table -->
+                            <div class="table-scroll">
+                                <table class="table table-striped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama</th>
+                                            <th>Bulan</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="paymentTable">
+                                        <tr><td>Contoh 1</td><td>Januari</td><td>Lunas</td></tr>
+                                        <tr><td>Contoh 2</td><td>Februari</td><td>Belum</td></tr>
+                                        <tr><td>Contoh 3</td><td>Maret</td><td>Lunas</td></tr>
+                                        <tr><td>Contoh 4</td><td>April</td><td>Belum</td></tr>
+                                        <tr><td>Contoh 5</td><td>Mei</td><td>Lunas</td></tr>
+                                        <tr><td>Contoh 6</td><td>Juni</td><td>Belum</td></tr>
+                                        <!-- Data panjang -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">Data Keluarga</div>
+                        <div class="table-wrapper">
+                            <!-- Filter Bar -->
+                            <div class="filter-bar">
+                                <div class="row g-2">
+                                    <div class="col-md-4">
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select id="statusFilter" class="form-select">
+                                            <option value="">RT/RW</option>
+                                            <option value="01/04">01/04</option>                                            
+                                            <option value="02/04">02/04</option>                                            
+                                            <option value="03/04">03/04</option>                                            
+                                            <option value="03/03">03/03</option>                                            
+                                            <option value="RW05">RW 05</option>                                            
+                                        </select>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <!-- Scrollable Table -->
+                            <div class="table-scroll">
+                                <table class="table table-striped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama Kepala Keluarga</th>
+                                            <th>Jumlah Anggota Keluarga</th>
+                                            <th>Rincian</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="paymentTable">
+                                        <tr><td>Contoh 1</td><td>Januari</td><td>Lunas</td></tr>
+                                        <tr><td>Contoh 2</td><td>Februari</td><td>Belum</td></tr>
+                                        <tr><td>Contoh 3</td><td>Maret</td><td>Lunas</td></tr>
+                                        <tr><td>Contoh 4</td><td>April</td><td>Belum</td></tr>
+                                        <tr><td>Contoh 5</td><td>Mei</td><td>Lunas</td></tr>
+                                        <tr><td>Contoh 6</td><td>Juni</td><td>Belum</td></tr>
+                                        <!-- Data panjang -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
