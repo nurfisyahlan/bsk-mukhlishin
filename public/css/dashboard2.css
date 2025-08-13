@@ -12,9 +12,13 @@ body {
 }
 
 nav.d-flex {
-    
     margin-right:50px;
     gap: 50px;
+}
+
+.stats{
+    margin-left: 50px;
+    font-size: large;
 }
 
 .search-box {

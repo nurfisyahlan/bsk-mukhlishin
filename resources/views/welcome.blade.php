@@ -18,7 +18,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="mb-4">
+    <div class="mb-3">
         <h2 class="mb-0 fw-bold">Badan Sosial Kematian</h2>
         <h5 class="text-secondary">Masjid Mukhlisin</h5>
     </div>
@@ -37,7 +37,7 @@
 
         <!-- Right: Info Cards -->
         <div class="col-md-6">
-            <div class="d-flex mb-3 gap-4 text-center">
+            <div class="d-flex gap-4 text-center stats">
                 <div>
                     <h4>150+</h4>
                     <p>KK</p>
