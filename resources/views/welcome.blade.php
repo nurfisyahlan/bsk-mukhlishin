@@ -5,74 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard BSK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: Poppins, sans-serif;
-        }
-        /* Sidebar */
-        #sidebar {
-            min-width: 260px;
-            max-width: 260px;
-            min-height: 100vh;
-            background: #343a40;
-            color: #fff;
-            transition: all 0.3s;
-        }
-        #sidebar .nav-link {
-            color: #fff;
-        }
-        #sidebar.collapsed {
-            margin-left: -260px;
-        }
-        /* Content */
-        #content {
-            transition: all 0.3s;
-        }
-        .card {
-            min-height: 250px; /* bebas sesuai kebutuhan */
-        }
-        .table-wrapper {
-            display: flex;
-            flex-direction: column;
-            height: 200px; /* tinggi tetap card */            
-        }
-        .table-scroll {
-            flex: 1;
-            overflow-y: auto; /* hanya bagian tabel yang scroll */            
-        }
-
-        .table-scroll table {
-            border: 1px solid #ccc;      /* garis tepi tabel */
-            border-collapse: collapse;   /* rapetin garis */
-            width: 95%;                  /* lebar tabel diperkecil */
-            margin: 0 auto;              /* tengahin tabel */
-        }
-
-        .table-scroll th,
-        .table-scroll td {
-            border: 1px solid #ccc;      /* garis tiap sel */
-            padding: 6px 10px;           /* jarak isi sel */
-        }
-
-        .filter-bar {
-            background: white; /* biar nggak transparan saat scroll */
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            padding: 10px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        /* Footer */
-        footer {
-            background: #f8f9fa;
-            padding: 10px;
-            text-align: center;
-            font-size: 14px;
-            color: #6c757d;
-            margin-top: 20px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">    
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -186,7 +120,7 @@
                             </div>
 
                             <!-- Scrollable Table -->
-                            <div class="table-scroll">
+                            <div class="table-scroll2">
                                 <table class="table table-striped mb-0">
                                     <thead>
                                         <tr>
@@ -214,7 +148,7 @@
                     <div class="card shadow-sm">
                         <div class="card-header bg-primary text-white">Data Keluarga</div>
                         <div class="card-body p-0">
-                            <table class="table table-striped mb-0">
+                            <table id="datakeluarga" class="table table-striped mb-0">
                                 <thead>
                                     <tr>
                                         <th>Kepala Keluarga</th>
