@@ -146,26 +146,6 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">Data Keluarga</div>
-                        <div class="card-body p-0">
-                            <table id="datakeluarga" class="table table-striped mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Kepala Keluarga</th>
-                                        <th>Jumlah Anggota</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Pak Ahmad</td><td>5</td></tr>
-                                    <tr><td>Bu Siti</td><td>4</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card shadow-sm">
                         <div class="card-header bg-primary text-light">Rekap Saldo Masuk/Keluar</div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">

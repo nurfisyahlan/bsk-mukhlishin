@@ -64,6 +64,12 @@ body {
     padding: 6px 10px;           /* jarak isi sel */
 }
 
+.table-scroll2 th,
+.table-scroll2 td {
+    border: 1px solid #ccc;      /* garis tiap sel */
+    padding: 6px 1px;           /* jarak isi sel */ 
+}
+
 .filter-bar {
     background: white; /* biar nggak transparan saat scroll */
     position: sticky;
