@@ -50,24 +50,29 @@ body {
     margin: 0 auto;              /* tengahin tabel */
 }
 
-.table-scroll2 table {
-    border: 1px solid #ccc;      /* garis tepi tabel */
-    border-collapse: collapse;   /* rapetin garis */
-    width: 95%;                  /* lebar tabel diperkecil */
-    margin: 0 auto;              /* tengahin tabel */
-    overflow-x: auto;
-}                
-
 .table-scroll th,
 .table-scroll td {
     border: 1px solid #ccc;      /* garis tiap sel */
     padding: 6px 10px;           /* jarak isi sel */
 }
 
-.table-scroll2 th,
-.table-scroll2 td {
-    border: 1px solid #ccc;      /* garis tiap sel */
-    padding: 6px 1px;           /* jarak isi sel */ 
+.table-scroll2 table {
+    border: 1px solid #ccc;      /* garis tepi tabel */
+    border-collapse: collapse;   /* rapetin garis */
+    width: 95%;                  /* lebar tabel diperkecil */
+    margin: 0 auto;              /* tengahin tabel */
+    overflow-x: auto;
+    table-layout: auto;
+}   
+
+.table-scroll2 table th,
+.table-scroll2 table td {
+    white-space: nowrap; /* teks tidak dibungkus */
+    padding: 6px 50px;
+}
+
+.table-scroll2 table th:first-child {
+    width: 250px; /* pastikan lebar cukup */
 }
 
 .filter-bar {
