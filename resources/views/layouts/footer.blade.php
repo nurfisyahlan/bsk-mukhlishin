@@ -13,4 +13,4 @@
             <span class="icon">➕</span> Lainnya
         </a>
     </div>
-</footer>
+</footer>   

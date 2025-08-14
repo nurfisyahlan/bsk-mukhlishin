@@ -49,18 +49,21 @@
                 {{-- Kolom kanan: Detail --}}
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <h5 class="fw-bold mb-0">H. Ramli Khatib</h5>
-                        <small>001/BSK/2019/1 | 2 Orang</small>
-                        <div class="mt-2">
-                            <button class="btn btn-outline-secondary btn-sm">Lihat Anggota Keluarga</button>
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h5 class="fw-bold mb-0">H. Ramli Khatib</h5>
+                                <small>001/BSK/2019/1 | 2 Orang</small>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-outline-secondary btn-sm">Lihat Anggota Keluarga</button>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="row">
                         <!-- Tahun 2023 -->
                         <div class="col-md-6">
-                            <h6 class="fw-bold">Tahun 2023</h6>
-                            <div class="table-container"></div>
+                            <h6 class="fw-bold">Tahun 2023</h6>                            
                                 <table class="table table-bordered table-sm align-middle">
                                     <thead class="table-light">
                                         <tr>
