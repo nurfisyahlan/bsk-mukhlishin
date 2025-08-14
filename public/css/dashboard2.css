@@ -66,3 +66,43 @@ nav.d-flex {
     font-size: 20px;
     font-weight: bold;
 }
+
+.table-container {
+    max-height: 400px; /* tinggi fix sesuai kebutuhan */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* menu footer */
+.footer-menu {
+    background-color: #fff;
+}
+
+.footer-menu .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 2px solid #ff6600;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-menu .menu-btn:hover {
+    background-color: #ffece0;
+}
+
+.footer-menu .menu-btn.active {
+    background-color: #ff6600;
+    color: white;
+}
+
+.footer-menu .menu-btn .icon {
+    font-size: 16px;
+}
+
