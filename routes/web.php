@@ -10,6 +10,10 @@ Route::get('/monitoring-pembayaran', function () {
     return view('monitoring-pembayaran');
 });
 
+Route::get('/admin', function () {
+    return view('admin-dashboard');
+});
+
 Route::get('/inventaris', function () {
     return view('inventaris');
 });
