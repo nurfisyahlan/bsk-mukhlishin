@@ -73,6 +73,16 @@ nav.d-flex {
     overflow-x: hidden;
 }
 
+.tahun-pembayaran {
+    max-height: 300px; /* samakan dengan tinggi rekap kiri */
+    overflow-y: auto;
+    display: flex;
+    padding-right: 5px; /* biar teks nggak ketimpa scrollbar */
+}
+
+.tahun-pembayaran table {
+    margin-bottom: 0; /* biar nggak ada space berlebih */
+}
 
 /* menu footer */
 .footer-menu {

@@ -20,6 +20,7 @@
                 {{-- Kolom kiri: Tabel --}}
                 <div class="col-md-6">
                     <div class="border rounded p-3">
+                        <h5 class="fw-bold mb-1">Rekap Pembayaran</h5>
                         <div class="d-flex gap-2 mb-3">
                             <button class="btn btn-outline-secondary btn-sm">Cetak PDF</button>
                             <button class="btn btn-outline-secondary btn-sm">Unduh</button>
@@ -60,10 +61,96 @@
                         </div>
                     </div>
                     
-                    <div class="row">
-                        <!-- Tahun 2023 -->
-                        <div class="col-md-6">
-                            <h6 class="fw-bold">Tahun 2023</h6>                            
+                    <div class="tahun-pembayaran">
+                        <div class="d-flex overflow-auto gap-3">
+                            <!-- Tahun 2023 -->
+                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                                <h6 class="fw-bold">Tahun 2023</h6>                            
+                                    <table class="table table-bordered table-sm align-middle">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Bulan</th>
+                                                <th>Tanggal Bayar</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Januari</td>
+                                                <td>04/02/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Februari</td>
+                                                <td>-</td>
+                                                <td><span class="badge bg-danger">Belum</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maret</td>
+                                                <td>-</td>
+                                                <td><span class="badge bg-danger">Belum</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>April</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Mei</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Juni</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Juli</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Agustus</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>September</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Oktober</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>November</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Desember</td>
+                                                <td>04/03/23</td>
+                                                <td><span class="badge bg-success">Lunas</span></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                            </div>
+
+                            <!-- Tahun 2024 -->
+                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                                <h6 class="fw-bold">Tahun 2024</h6>
                                 <table class="table table-bordered table-sm align-middle">
                                     <thead class="table-light">
                                         <tr>
@@ -144,91 +231,177 @@
                                         
                                     </tbody>
                                 </table>
-                        </div>
+                            </div>
 
-                        <!-- Tahun 2024 -->
-                        <div class="col-md-6">
-                            <h6 class="fw-bold">Tahun 2024</h6>
-                            <table class="table table-bordered table-sm align-middle">
-                                <thead class="table-light">
-                                    <tr>
-                                        <th>Bulan</th>
-                                        <th>Tanggal Bayar</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Januari</td>
-                                        <td>04/02/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Februari</td>
-                                        <td>-</td>
-                                        <td><span class="badge bg-danger">Belum</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maret</td>
-                                        <td>-</td>
-                                        <td><span class="badge bg-danger">Belum</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>April</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Mei</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Juni</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Juli</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Agustus</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>September</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Oktober</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>November</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Desember</td>
-                                        <td>04/03/23</td>
-                                        <td><span class="badge bg-success">Lunas</span></td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
+                            <!-- Tahun 2025 -->
+                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                                <h6 class="fw-bold">Tahun 2025</h6>
+                                <table class="table table-bordered table-sm align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Bulan</th>
+                                            <th>Tanggal Bayar</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Januari</td>
+                                            <td>04/02/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Februari</td>
+                                            <td>-</td>
+                                            <td><span class="badge bg-danger">Belum</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maret</td>
+                                            <td>-</td>
+                                            <td><span class="badge bg-danger">Belum</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Mei</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Juni</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Juli</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Agustus</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>September</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Oktober</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>November</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Desember</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Tahun 2026 -->
+                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                                <h6 class="fw-bold">Tahun 2026</h6>
+                                <table class="table table-bordered table-sm align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Bulan</th>
+                                            <th>Tanggal Bayar</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Januari</td>
+                                            <td>04/02/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Februari</td>
+                                            <td>-</td>
+                                            <td><span class="badge bg-danger">Belum</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maret</td>
+                                            <td>-</td>
+                                            <td><span class="badge bg-danger">Belum</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Mei</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Juni</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Juli</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Agustus</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>September</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Oktober</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>November</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Desember</td>
+                                            <td>04/03/23</td>
+                                            <td><span class="badge bg-success">Lunas</span></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
