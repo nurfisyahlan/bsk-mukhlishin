@@ -64,7 +64,7 @@
                     <div class="tahun-pembayaran">
                         <div class="d-flex overflow-auto gap-3">
                             <!-- Tahun 2023 -->
-                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                            <div class="p-1 d-flex flex-column mt-2" style="min-width: 300px;">
                                 <h6 class="fw-bold">Tahun 2023</h6>                            
                                     <table class="table table-bordered table-sm align-middle">
                                         <thead class="table-light">
@@ -142,14 +142,16 @@
                                                 <td>Desember</td>
                                                 <td>04/03/23</td>
                                                 <td><span class="badge bg-success">Lunas</span></td>
-                                            </tr>
-                                            
+                                            </tr>                                        
                                         </tbody>
                                     </table>
+                                    <div class="p-2">
+                                        <p>Keterangan: </p>
+                                    </div>
                             </div>
 
                             <!-- Tahun 2024 -->
-                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                            <div class="p-1 d-flex flex-column mt-2" style="min-width: 300px;">
                                 <h6 class="fw-bold">Tahun 2024</h6>
                                 <table class="table table-bordered table-sm align-middle">
                                     <thead class="table-light">
@@ -227,14 +229,16 @@
                                             <td>Desember</td>
                                             <td>04/03/23</td>
                                             <td><span class="badge bg-success">Lunas</span></td>
-                                        </tr>
-                                        
+                                        </tr>                                        
                                     </tbody>
                                 </table>
+                                <div class="p-2">
+                                    <p>Keterangan: </p>
+                                </div>
                             </div>
 
                             <!-- Tahun 2025 -->
-                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                            <div class="p-1 d-flex flex-column mt-2" style="min-width: 300px;">
                                 <h6 class="fw-bold">Tahun 2025</h6>
                                 <table class="table table-bordered table-sm align-middle">
                                     <thead class="table-light">
@@ -312,14 +316,16 @@
                                             <td>Desember</td>
                                             <td>04/03/23</td>
                                             <td><span class="badge bg-success">Lunas</span></td>
-                                        </tr>
-                                        
+                                        </tr>                                        
                                     </tbody>
                                 </table>
+                                <div class="p-2">
+                                    <p>Keterangan: </p>
+                                </div>
                             </div>
 
                             <!-- Tahun 2026 -->
-                            <div class="border rounded p-2 d-flex flex-column" style="min-width: 250px; max-height: 1200px;">
+                            <div class="p-1 d-flex flex-column mt-2" style="min-width: 300px;">
                                 <h6 class="fw-bold">Tahun 2026</h6>
                                 <table class="table table-bordered table-sm align-middle">
                                     <thead class="table-light">
@@ -397,10 +403,12 @@
                                             <td>Desember</td>
                                             <td>04/03/23</td>
                                             <td><span class="badge bg-success">Lunas</span></td>
-                                        </tr>
-                                        
+                                        </tr>                                        
                                     </tbody>
                                 </table>
+                                <div class="p-2">
+                                    <p>Keterangan: </p>
+                                </div>
                             </div>
                         </div>
                     </div>
