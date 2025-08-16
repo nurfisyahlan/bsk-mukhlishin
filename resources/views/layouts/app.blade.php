@@ -22,7 +22,7 @@
     </div>
 
    {{-- Footer, tampil kecuali di welcome --}}
-    @if (!Request::is('/')) {{-- kalau bukan halaman "/" --}}
+    @if (!Request::is('/'))
         @include('layouts.footer')
     @endif    
 

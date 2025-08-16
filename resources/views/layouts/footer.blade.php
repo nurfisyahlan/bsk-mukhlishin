@@ -3,10 +3,10 @@
         <a href="/monitoring-pembayaran" class="menu-btn active">
             <span class="icon">📡</span> Pemantauan Pembayaran
         </a>
-        <a href="#" class="menu-btn">
+        <a href="/saldo" class="menu-btn">
             <span class="icon">📷</span> Laporan Keuangan
         </a>
-        <a href="#" class="menu-btn">
+        <a href="/inventaris" class="menu-btn">
             <span class="icon">📋</span> Daftar Inventaris
         </a>
         <a href="#" class="menu-btn">
