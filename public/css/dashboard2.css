@@ -84,6 +84,152 @@ nav.d-flex {
     margin-bottom: 0; /* biar nggak ada space berlebih */
 }
 
+.tabel-saldo {
+    border: 2px solid #ff7f50; /* oranye lembut */
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 0;
+    overflow-y: auto;
+    max-height: 300px; /* biar muncul scrollbar */
+    background-color: #fff;
+}
+
+/* Tabel */
+.tabel-saldo table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Header tabel */
+.tabel-saldo thead th {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Isi tabel */
+.tabel-saldo td {
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+    padding: 6px;
+}
+
+/* Scrollbar custom biar mirip desain */
+.tabel-saldo::-webkit-scrollbar {
+    width: 8px;
+}
+.tabel-saldo::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.tabel-saldo::-webkit-scrollbar-thumb {
+    background: #ff7f50;
+    border-radius: 10px;
+}
+.tabel-saldo::-webkit-scrollbar-thumb:hover {
+    background: #e5673f;
+}
+
+.border {
+  border: 2px solid #ff6f3c !important; /* oranye */
+}
+
+/* Bungkus utama */
+.inventaris {
+    border: 2px solid #ff7f50;
+    border-radius: 12px;
+    padding: 15px;
+    background: #fff;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Header Search + Tombol */
+.inventaris-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.inventaris-header input {
+    flex: 1;
+    min-width: 180px;
+    max-width: 400px;   /* biar gak kepanjangan di layar gede */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+
+.btn-search {
+    background: #ff7f50;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px 10px;
+}
+
+.btn-toggle {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 6px 10px;
+    background: #fff;
+}
+
+/* Grid item */
+.inventaris-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+/* Card item */
+.inventaris-grid .item {
+    border: 1px solid #ff7f50;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+
+.inventaris-grid .item-img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #aaa;
+    margin: 0 auto 8px;
+    border-radius: 6px;
+}
+
+.inventaris-grid p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.inventaris-grid small {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Scrollbar custom */
+.inventaris::-webkit-scrollbar {
+    width: 8px;
+}
+.inventaris::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.inventaris::-webkit-scrollbar-thumb {
+    background: #ff7f50;
+    border-radius: 10px;
+}
+.inventaris::-webkit-scrollbar-thumb:hover {
+    background: #e5673f;
+}
+
 /* menu footer */
 .footer-menu {
     background-color: #fff;
