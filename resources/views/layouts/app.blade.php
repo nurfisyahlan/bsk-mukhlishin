@@ -21,10 +21,10 @@
         @yield('content')
     </div>
 
-    @include('layouts.footer')
-    @if (!Request::is('/'))
-        @include('footer')
-    @endif
+   {{-- Footer, tampil kecuali di welcome --}}
+    @if (!Request::is('/')) {{-- kalau bukan halaman "/" --}}
+        @include('layouts.footer')
+    @endif    
 
     {{-- Bootstrap JS --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
