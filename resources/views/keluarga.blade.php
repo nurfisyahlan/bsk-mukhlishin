@@ -26,30 +26,24 @@
                 <div class="col-12">
                     <div class="tabel-saldo">
                         <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
-                            <!-- Input cari -->
-                            <input type="text" class="form-control w-auto" placeholder="Cari Nomor / Nama Kepala Keluarga">
-                            <button class="btn btn-primary" type="button">
-                                <i class="bi bi-search"></i>
-                            </button>
-        
-                            <!-- Filter RT/RW -->
-                            <select class="form-select w-auto">
-                                <option value="">Filter RT/RW</option>
-                                <option value="1">RT 01/RW 01</option>
-                                <option value="2">RT 02/RW 01</option>
-                                <option value="3">RT 03/RW 02</option>
-                                <!-- tambah opsi sesuai kebutuhan -->
-                            </select>
-
-                            <!-- Filter Status -->
-                            <select class="form-select w-auto">
-                                <option value="">Status</option>
-                                <option value="1">Aktif</option>
-                                <option value="2">Ditangguhkan</option>
-                                <option value="3">Tidak Aktif</option>
-                                <!-- tambah opsi sesuai kebutuhan -->
-                            </select>
-                                
+                            <div class="filter-header">
+                                <input type="text" class="form-control" placeholder="Cari Nomor/Nama Keluarga...">
+                                <button class="btn btn-search"><i class="bi bi-search"></i></button>
+                                <!-- Filter RT/RW -->
+                                    <select class="form-select w-auto">
+                                        <option value="">Filter RT/RW</option>
+                                        <option value="1">RT 01/RW 01</option>
+                                        <option value="2">RT 02/RW 01</option>
+                                        <option value="3">RT 03/RW 02</option>
+                                        <!-- tambah opsi sesuai kebutuhan -->
+                                    </select>                                                                                   
+                                    <select class="form-select w-auto">
+                                        <option value="">Status</option>
+                                        <option value="1">Aktif</option>
+                                        <option value="2">Ditangguhkan</option>
+                                        <option value="3">Tidak Aktif</option>
+                                        <!-- tambah opsi sesuai kebutuhan -->
+                                    </select>                                                                                   
                         </div>
                     
                         <table class="table table-bordered table-sm text-center mb-0">

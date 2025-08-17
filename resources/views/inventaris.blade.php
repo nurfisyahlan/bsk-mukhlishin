@@ -21,7 +21,7 @@
             <div class="row g-4 mb-4">
                 <div class="inventaris">
                 <!-- Search & View Option -->
-                <div class="inventaris-header">
+                <div class="filter-header">
                     <input type="text" class="form-control" placeholder="Cari barang...">
                     <button class="btn btn-search"><i class="bi bi-search"></i></button>
                     <button class="btn btn-toggle"><i class="bi bi-list-ul"></i></button>

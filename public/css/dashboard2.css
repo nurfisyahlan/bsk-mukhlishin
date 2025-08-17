@@ -149,14 +149,23 @@ nav.d-flex {
 }
 
 /* Header Search + Tombol */
-.inventaris-header {
+.filter-header {
     display: flex;
     align-items: center;
     gap: 6px;
     margin-bottom: 15px;
 }
 
-.inventaris-header input {
+.filter-header input {
+    flex: 1;
+    min-width: 180px;
+    max-width: 400px;   /* biar gak kepanjangan di layar gede */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+
+.filter-header select {
     flex: 1;
     min-width: 180px;
     max-width: 400px;   /* biar gak kepanjangan di layar gede */
@@ -181,14 +190,14 @@ nav.d-flex {
 }
 
 /* Grid item */
-.inventaris-grid {
+.filter-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 15px;
 }
 
 /* Card item */
-.inventaris-grid .item {
+.filter-grid .item {
     border: 1px solid #ff7f50;
     border-radius: 10px;
     text-align: center;
@@ -196,7 +205,7 @@ nav.d-flex {
     background: #fff;
 }
 
-.inventaris-grid .item-img {
+.filter-grid .item-img {
     width: 60px;
     height: 60px;
     border: 1px solid #aaa;
@@ -204,29 +213,29 @@ nav.d-flex {
     border-radius: 6px;
 }
 
-.inventaris-grid p {
+.filter-grid p {
     font-size: 14px;
     margin: 0;
 }
 
-.inventaris-grid small {
+.filter-grid small {
     font-size: 12px;
     color: #555;
 }
 
 /* Scrollbar custom */
-.inventaris::-webkit-scrollbar {
+.filter::-webkit-scrollbar {
     width: 8px;
 }
-.inventaris::-webkit-scrollbar-track {
+.filter::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
 }
-.inventaris::-webkit-scrollbar-thumb {
+.filter::-webkit-scrollbar-thumb {
     background: #ff7f50;
     border-radius: 10px;
 }
-.inventaris::-webkit-scrollbar-thumb:hover {
+.filter::-webkit-scrollbar-thumb:hover {
     background: #e5673f;
 }
 
