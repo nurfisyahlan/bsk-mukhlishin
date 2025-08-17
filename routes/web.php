@@ -26,6 +26,14 @@ Route::get('/saldo', function () {
     return view('saldo');
 });
 
+Route::get('/kematian', function () {
+    return view('kematian');
+});
+
+Route::get('/pengumuman', function () {
+    return view('pengumuman');
+});
+
 Route::get('/lainnya', function () {
     return view('lainnya');
 });
