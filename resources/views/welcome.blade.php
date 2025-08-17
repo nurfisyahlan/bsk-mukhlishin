@@ -74,7 +74,7 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <div class="info-card">
+                         <div class="info-card" data-bs-toggle="modal" data-bs-target="#menuModal" style="cursor:pointer;">
                             <div class="info-icon">➕</div>
                             Lainnya
                         </div>
@@ -87,6 +87,65 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Menu -->
+        <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+              <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="menuModalLabel">Menu Lainnya</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row g-3 text-center">
+                    <div class="col-6">
+                        <a href="/monitoring-pembayaran" style="color:black; text-decoration:none;">
+                            <div class="info-card">
+                                📡<br>Pemantauan Pembayaran
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/saldo" style="color:black; text-decoration:none;">
+                            <div class="info-card">
+                                📷<br>Laporan Keuangan
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/inventaris" style="color:black; text-decoration:none;">
+                            <div class="info-card">
+                                📋<br>Daftar Inventaris
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/keluarga" style="color:black; text-decoration:none;">
+                            <div class="info-card">
+                                👨‍👩‍👧‍👦<br>Data Keluarga
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/kematian" style="color:black; text-decoration:none;">
+                            <div class="info-card">
+                                ⚰️<br>Kematian
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/pengumuman" style="color:black; text-decoration:none;">
+                            <div class="info-card">
+                                📢<br>Pengumuman
+                            </div>
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     @endsection    
 
 </body>
