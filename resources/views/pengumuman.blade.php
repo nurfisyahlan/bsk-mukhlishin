@@ -30,12 +30,22 @@
             <h5 class="card-title fw-bold">Berita Duka: Alm. H. Ramli bin Abdullah</h5>
             <p class="card-text text-muted mb-1"><i class="bi bi-calendar-event"></i> 15 Agustus 2025</p>
             <p class="card-text text-muted"><i class="bi bi-geo-alt"></i> RT 02/RW 01 - Masjid Mukhlisin</p>
-            <p class="card-text">Telah berpulang ke rahmatullah salah satu anggota BSK. Klik detail untuk informasi selengkapnya.</p>
+            <p class="card-text news-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam, obcaecati pariatur, repudiandae magnam accusantium commodi nulla soluta harum quas quod exercitationem officia sapiente laudantium possimus veniam sequi. Dolorem quasi aspernatur ex vero, dolorum ea, nulla recusandae aut saepe, labore facilis obcaecati? Sit odit nihil laudantium aspernatur ducimus explicabo accusamus, quam numquam deserunt voluptatibus aliquam incidunt cupiditate ut animi reiciendis doloribus. Corporis animi quibusdam, accusantium nesciunt consequatur neque a inventore sit quam commodi accusamus nobis nulla quae velit dolorem natus molestias ea nostrum ipsa porro aperiam. Maxime, pariatur molestiae voluptatem, eius molestias quis quaerat omnis placeat rem dolores tempora debitis? Klik detail untuk informasi selengkapnya.</p>
             <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal">
                 <i class="bi bi-info-circle"></i> Detail
             </button>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".news-content").forEach(function (el) {
+                let words = el.innerText.trim().split(/\s+/); // pisah jadi array kata
+                if (words.length > 20) {
+                    el.innerText = words.slice(0, 20).join(" ") + " ...";
+                }
+            });
+        });
+    </script>
 
     <!-- Modal Detail -->
     <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
@@ -53,10 +63,7 @@
             <p><strong>Status Santunan:</strong> Sudah diberikan</p>
             <hr>
             <p>
-                Dengan penuh duka cita, keluarga besar BSK Masjid Mukhlisin mengabarkan bahwa 
-                Alm. H. Ramli bin Abdullah telah berpulang ke rahmatullah pada 15 Agustus 2025. 
-                Semoga Allah SWT menerima amal ibadah beliau dan memberikan tempat terbaik di sisi-Nya. 
-                Amin ya Rabbal Alamin.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sapiente obcaecati enim pariatur repellat, nobis quos modi! Facere aliquam eius similique ex alias exercitationem ipsa expedita eligendi odit provident rerum repellendus doloremque, aspernatur, culpa blanditiis delectus unde cum debitis dignissimos! Quae molestiae esse aliquam, mollitia numquam in fugit qui error consequuntur nam tenetur, quia tempora? Ex adipisci ipsam mollitia, perferendis expedita nemo ipsum exercitationem iste, placeat veritatis id repellat harum cum vel? Unde similique voluptas assumenda dolorem iusto, vel tenetur architecto, quis, voluptatibus suscipit omnis quo quasi possimus reiciendis porro? Minima velit harum tenetur modi facilis aut neque quo incidunt.
             </p>
           </div>
         </div>
