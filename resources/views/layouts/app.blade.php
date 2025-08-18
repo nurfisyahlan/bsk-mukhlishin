@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     {{-- CSS Custom --}}
-    <link href="{{ asset('css/dashboard2.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/user.css') }}" rel="stylesheet">
 </head>
 <body class="pt-2 px-5 pb-5">
     
