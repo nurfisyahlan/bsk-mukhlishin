@@ -39,5 +39,5 @@ Route::get('/admin-dashboard', function () {
 });
 
 Route::get('/admin-keluarga', function () {
-    return view('admin/keluarga');
+    return view('admin/keluarga ');
 });
