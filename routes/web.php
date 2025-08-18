@@ -39,5 +39,25 @@ Route::get('/admin-dashboard', function () {
 });
 
 Route::get('/admin-keluarga', function () {
-    return view('admin/keluarga ');
+    return view('admin/keluarga');
+});
+
+Route::get('/admin-inventaris', function () {
+    return view('admin/inventaris');
+});
+
+Route::get('/admin-saldo', function () {
+    return view('admin/saldo');
+});
+
+Route::get('/admin-monitoring-pembayaran', function () {
+    return view('admin/monitoring-pembayaran');
+});
+
+Route::get('/admin-kematian', function () {
+    return view('admin/kematian');
+});
+
+Route::get('/admin-pengumuman', function () {
+    return view('admin/pengumuman');
 });
