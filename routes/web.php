@@ -34,6 +34,10 @@ Route::get('/pengumuman', function () {
     return view('pengumuman');
 });
 
-Route::get('/lainnya', function () {
-    return view('lainnya');
+Route::get('/admin-dashboard', function () {
+    return view('admin/dashboard');
+});
+
+Route::get('/admin-keluarga', function () {
+    return view('admin/keluarga');
 });
