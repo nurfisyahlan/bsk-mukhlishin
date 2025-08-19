@@ -22,7 +22,7 @@
             @include('layouts.admin-navbar')
 
             {{-- Konten Halaman --}}
-            <div class="container mt-4">
+            <div class="container mt-5">
                 @yield('content2')
             </div>
 
