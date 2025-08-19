@@ -1,6 +1,7 @@
 body {
     font-family: 'Times New Roman', sans-serif;
 }
+
 /* Sidebar */
 #sidebar {
     min-width: 260px;
@@ -16,6 +17,18 @@ body {
 #sidebar.collapsed {
     margin-left: -260px;
 }
+
+.navbar-custom {
+    background-color: #e65c00;
+}
+
+.nav-link.active {
+    background-color: #e65c00; /* biru bootstrap */
+    color: #fff !important;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
 /* Content */
 #content {
     transition: all 0.3s;
