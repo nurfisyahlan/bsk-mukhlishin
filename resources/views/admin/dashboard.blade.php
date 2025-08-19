@@ -10,32 +10,9 @@
 </head>
 <body>
 
-<div class="d-flex" id="wrapper">
-    <!-- Sidebar -->
-    <div id="sidebar" class="bg-dark">
-        <div class="p-2">
-            <h4 class="text-white mt-2 text-center">BSK Dashboard</h4>
-            <nav class="nav flex-column pt-3">
-                <a class="nav-link" href="#">Beranda</a>
-                <a class="nav-link" href="#">Monitoring Pembayaran</a>
-                <a class="nav-link" href="#">Keluarga</a>
-                <a class="nav-link" href="#">Saldo</a>
-                <a class="nav-link" href="#">Inventaris</a>
-            </nav>
-        </div>
-    </div>
+    @extends('layouts.admin')
 
-    <!-- Page Content -->
-    <div id="content" class="flex-grow-1">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-success shadow-sm">
-            <div class="container-fluid">
-                <button class="btn btn-outline-light me-2" id="sidebarToggle">☰</button>
-                <a class="navbar-brand fw-bold text-light" href="#">Badan Sosial Kematian</a>
-            </div>
-        </nav>
-
-        <!-- Header -->
+    @section('content2')
         <div class="container mt-4">
             <h2 class="fw-bold mb-4">Beranda</h2>
 
@@ -187,20 +164,9 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Footer -->
-            <footer class="mt-4">
-                &copy; {{ date('Y') }} Badan Sosial Kematian - Semua Hak Dilindungi
-            </footer>
+                    
         </div>
-    </div>
-</div>
+    @endsection
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.getElementById('sidebarToggle').addEventListener('click', function () {
-        document.getElementById('sidebar').classList.toggle('collapsed');
-    });
-</script>
 </body>
 </html>
