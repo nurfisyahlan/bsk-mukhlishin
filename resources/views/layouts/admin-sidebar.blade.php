@@ -8,6 +8,8 @@
             <a class="nav-link" href="admin-keluarga">Keluarga</a>
             <a class="nav-link" href="admin-saldo">Saldo</a>
             <a class="nav-link" href="admin-inventaris">Inventaris</a>
+            <a class="nav-link" href="admin-kematian">Kematian</a>
+            <a class="nav-link" href="admin-pengumuman">Pengumuman</a>
         </nav>
     </div>
 </div>
