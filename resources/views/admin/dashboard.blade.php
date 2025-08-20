@@ -2,7 +2,7 @@
 
     @section('content2')
         <div class="container mt-4">
-            <h2 class="fw-bold mb-4">Beranda</h2>
+            <h2 class="fw-bold">Beranda</h2>
 
             <!-- Grid Tabel -->
             <div class="row g-4">
@@ -148,7 +148,12 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">Inventaris</div>
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                            <span>Inventaris</span>
+                            <a href="{{ url('admin-inventaris') }}" class="btn btn-sm btn-light">
+                                Detail
+                            </a>
+                        </div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">
                                 <thead>
@@ -169,7 +174,12 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-light">Kematian</div>
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                            <span>Kematian</span>
+                            <a href="{{ url('admin-kematian') }}" class="btn btn-sm btn-light">
+                                Detail
+                            </a>
+                        </div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">
                                 <thead>
@@ -191,7 +201,12 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">Pengumuman</div>
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                            <span>Pengumuman</span>
+                            <a href="{{ url('admin-pengumuman') }}" class="btn btn-sm btn-light">
+                                Detail
+                            </a>
+                        </div>
                         <div class="card-body p-0">
                             <table class="table table-striped mb-0">
                                 <thead>
