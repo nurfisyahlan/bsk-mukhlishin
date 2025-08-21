@@ -8,7 +8,7 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
                             <span>Monitoring Pembayaran</span>
                             <a href="{{ url('admin-monitoring-pembayaran') }}" class="btn btn-sm btn-light">
                                 Detail
@@ -61,7 +61,7 @@
                 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
                             <span>Data Keluarga</span>
                             <a href="{{ url('admin-keluarga') }}" class="btn btn-sm btn-light">
                                 Detail
@@ -115,7 +115,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
                             <span>Rekap Saldo Masuk dan Keluar</span>
                             <a href="{{ url('admin-saldo') }}" class="btn btn-sm btn-light">
                                 Detail
@@ -154,7 +154,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
                             <span>Inventaris</span>
                             <a href="{{ url('admin-inventaris') }}" class="btn btn-sm btn-light">
                                 Detail
@@ -191,7 +191,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
                             <span>Kematian</span>
                             <a href="{{ url('admin-kematian') }}" class="btn btn-sm btn-light">
                                 Detail
@@ -228,7 +228,7 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
                             <span>Pengumuman</span>
                             <a href="{{ url('admin-pengumuman') }}" class="btn btn-sm btn-light">
                                 Detail

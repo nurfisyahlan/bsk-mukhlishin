@@ -36,6 +36,11 @@ body {
 }
 
 /* Content */
+
+.bg-grey{
+    background-color: #666666;    
+}
+
 #content {
     transition: all 0.3s;
 }
