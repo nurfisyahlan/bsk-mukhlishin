@@ -20,7 +20,7 @@
                                 <div class="row g-2">
                                     <div class="col-md-6 d-flex gap-1">
                                         <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
-                                        <button class="btn btn-primary btn-sm rounded-circle"  style="width:32px; height:32px;">
+                                        <button class="btn btn-primary rounded-circle">
                                             <i class="bi bi-search"></i>
                                         </button>
                                     </div>                                    
@@ -167,11 +167,22 @@
                                         <th>Nama Barang</th>
                                         <th>Jumlah</th>
                                         <th>Kondisi</th>
+                                        <th>Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>Kain Kafan</td><td>10</td><td>Baik</td></tr>
-                                    <tr><td>Kursi</td><td>20</td><td>Baik</td></tr>
+                                    <tr>
+                                        <td>Kain Kafan</td>
+                                        <td>10</td>
+                                        <td>Baik</td>
+                                        <td>Tersedia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kursi</td>
+                                        <td>20</td>
+                                        <td>Baik</td>
+                                        <td>Tidak Tersedia</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -229,6 +240,7 @@
                                     <tr>
                                         <th>Tanggal</th>
                                         <th>Judul Pengumuman</th>
+                                        <th>Kategori</th>
                                         <th>Isi</th>
                                     </tr>
                                 </thead>
@@ -236,12 +248,22 @@
                                     <tr>
                                         <td>01-01-1970</td>
                                         <td>Lorem ipsum dolor sit amet.</td>
-                                        <td><button class="btn btn-primary">Cek</button></td>
+                                        <td>Kematian</td>
+                                        <td>
+                                            <button class="btn btn-primary rounded-circle">
+                                                <i class="fa-duotone fa-solid fa-info"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>01-01-1970</td>
                                         <td>Lorem ipsum dolor sit amet consectetur.</td>
-                                        <td><button class="btn btn-primary">Cek</button></td>
+                                        <td>Berita</td>
+                                        <td>
+                                            <button class="btn btn-primary rounded-circle">
+                                                <i class="fa-duotone fa-solid fa-info"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
