@@ -42,20 +42,30 @@ body {
 .card {
     min-height: 250px; /* bebas sesuai kebutuhan */
 }
+
+.tinggi-card{
+    height:420px;
+}
 .table-wrapper {
     display: flex;
     flex-direction: column;
     height: 200px; /* tinggi tetap card */            
 }
+
+.table-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* tinggi tetap card */            
+}
 .table-scroll {
     flex: 1;
     overflow-y: auto; /* hanya bagian tabel yang scroll */            
+    overflow-x: auto;
 }
 
-.table-scroll2 {
-    flex: 1;
-    overflow-y: auto; /* hanya bagian tabel yang scroll */            
-    overflow-x: auto;
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa; /* efek hover */
+  cursor: pointer;
 }
 
 #datakeluarga, table{

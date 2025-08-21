@@ -1,7 +1,7 @@
     @extends('layouts.admin')
 
     @section('content2')
-        <div class="container mt-4">
+        <div class="container">
             <h2 class="fw-bold">Beranda</h2>
 
             <!-- Grid Tabel -->
@@ -18,19 +18,12 @@
                             <!-- Filter Bar -->
                             <div class="filter-bar">
                                 <div class="row g-2">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 d-flex gap-1">
                                         <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select id="statusFilter" class="form-select">
-                                            <option value="">RT/RW</option>
-                                            <option value="01/04">01/04</option>                                            
-                                            <option value="02/04">02/04</option>                                            
-                                            <option value="03/04">03/04</option>                                            
-                                            <option value="03/03">03/03</option>                                            
-                                            <option value="RW05">RW 05</option>                                            
-                                        </select>
-                                    </div>
+                                        <button class="btn btn-primary btn-sm rounded-circle"  style="width:32px; height:32px;">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>                                    
                                     <div class="col-md-3">
                                         <select id="statusFilter" class="form-select">
                                             <option value="">Status</option>
@@ -42,7 +35,7 @@
                             </div>
 
                             <!-- Scrollable Table -->
-                            <div class="table-scroll">
+                            <div class="p-1 table-scroll">
                                 <table class="table table-striped mb-0">
                                     <thead>
                                         <tr>
@@ -95,13 +88,13 @@
                             </div>
 
                             <!-- Scrollable Table -->
-                            <div class="table-scroll2">
+                            <div class="table-scroll">
                                 <table class="table table-striped mb-0">
                                     <thead>
                                         <tr>
                                             <th>Kepala Keluarga</th>
                                             <th>Jumlah Keluarga</th>
-                                            <th>Rincian</th>
+                                            <th>Rincian</th>                                                                                    
                                         </tr>
                                     </thead>
                                     <tbody id="paymentTable">
@@ -110,6 +103,7 @@
                                         <tr><td>Contoh 3</td><td>Maret</td><td>info</td></tr>
                                         <tr><td>Contoh 4</td><td>April</td><td>info</td></tr>
                                         <tr><td>Contoh 5</td><td>Mei</td><td>info</td></tr>
+                                        <tr><td>Contoh 6</td><td>Juni</td><td>info</td></tr>
                                         <tr><td>Contoh 6</td><td>Juni</td><td>info</td></tr>
                                         <!-- Data panjang -->
                                     </tbody>
@@ -127,19 +121,31 @@
                                 Detail
                             </a>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body p-3">
                             <table class="table table-striped mb-0">
                                 <thead>
-                                    <tr>
+                                    <tr>                                        
                                         <th>Tanggal</th>
-                                        <th>Keterangan</th>
+                                        <th>Uraian</th>
                                         <th>Masuk</th>
                                         <th>Keluar</th>
+                                        <th>Saldo</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>01-08-2025</td><td>Iuran Bulanan</td><td>Rp500.000</td><td>-</td></tr>
-                                    <tr><td>03-08-2025</td><td>Biaya Pemakaman</td><td>-</td><td>Rp300.000</td></tr>
+                                    <tr>
+                                        <td>01-08-2025</td>
+                                        <td>Iuran Bulanan</td>
+                                        <td>Rp500.000</td>                                        
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>03-08-2025</td>
+                                        <td>Biaya Pemakaman</td>
+                                        <td>-</td>                                        
+                                        <td>-</td>
+                                        <td>Rp300.000</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -154,7 +160,7 @@
                                 Detail
                             </a>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body p-3">
                             <table class="table table-striped mb-0">
                                 <thead>
                                     <tr>
@@ -180,19 +186,29 @@
                                 Detail
                             </a>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body p-3">
                             <table class="table table-striped mb-0">
                                 <thead>
                                     <tr>
                                         <th>Tanggal</th>
-                                        <th>Keterangan</th>
-                                        <th>Masuk</th>
-                                        <th>Keluar</th>
+                                        <th>Nama Anggota</th>
+                                        <th>Jam</th>
+                                        <th>Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>01-08-2025</td><td>Iuran Bulanan</td><td>Rp500.000</td><td>-</td></tr>
-                                    <tr><td>03-08-2025</td><td>Biaya Pemakaman</td><td>-</td><td>Rp300.000</td></tr>
+                                    <tr>
+                                        <td>01-08-2025</td>
+                                        <td>Fulan</td>
+                                        <td>12:45</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>03-08-2025</td>
+                                        <td>Fulanah</td>
+                                        <td>20:01</td>
+                                        <td>-</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -207,18 +223,26 @@
                                 Detail
                             </a>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body p-3">
                             <table class="table table-striped mb-0">
                                 <thead>
                                     <tr>
-                                        <th>Nama Barang</th>
-                                        <th>Jumlah</th>
-                                        <th>Kondisi</th>
+                                        <th>Tanggal</th>
+                                        <th>Judul Pengumuman</th>
+                                        <th>Isi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>Kain Kafan</td><td>10</td><td>Baik</td></tr>
-                                    <tr><td>Kursi</td><td>20</td><td>Baik</td></tr>
+                                    <tr>
+                                        <td>01-01-1970</td>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td><button class="btn btn-primary">Cek</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01-01-1970</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                        <td><button class="btn btn-primary">Cek</button></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

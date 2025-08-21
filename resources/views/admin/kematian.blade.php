@@ -24,14 +24,24 @@
                             <thead>
                                 <tr>
                                     <th>Tanggal</th>
-                                    <th>Keterangan</th>
-                                    <th>Masuk</th>
-                                    <th>Keluar</th>
+                                    <th>Nama Anggota Keluarga</th>
+                                    <th>Jam</th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>01-08-2025</td><td>Iuran Bulanan</td><td>Rp500.000</td><td>-</td></tr>
-                                <tr><td>03-08-2025</td><td>Biaya Pemakaman</td><td>-</td><td>Rp300.000</td></tr>
+                                <tr>
+                                    <td>01-08-2025</td>
+                                    <td>Fulan</td>
+                                    <td>17:02</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>03-08-2025</td>
+                                    <td>Fulanah</td>
+                                    <td>09:45</td>
+                                    <td>-</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

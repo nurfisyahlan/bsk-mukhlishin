@@ -17,9 +17,9 @@
             <h2 class="fw-bold mb-4">Keluarga</h2>
 
            <div class="col-lg-12">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm tinggi-card">
                     <div class="card-header bg-primary text-white">Data Keluarga</div>
-                    <div class="table-wrapper">
+                    <div class="table-wrapper2 ">
                         <!-- Filter Bar -->
                         <div class="filter-bar">
                             <div class="row g-2">
@@ -40,7 +40,7 @@
                         </div>
 
                         <!-- Scrollable Table -->
-                        <div class="table-scroll2">
+                        <div class="table-scroll">
                             <table class="table table-striped mb-0">
                                 <thead>
                                     <tr>

@@ -7,6 +7,7 @@
 
     {{-- Bootstrap CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     {{-- CSS Custom --}}
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
@@ -22,7 +23,7 @@
             @include('layouts.admin-navbar')
 
             {{-- Konten Halaman --}}
-            <div class="container mt-5">
+            <div class="container mt-3">
                 @yield('content2')
             </div>
 
