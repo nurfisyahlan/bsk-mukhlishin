@@ -1,62 +1,47 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Pengumuman BSK</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">    
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
-</head>
-<body>
+@extends('layouts.admin')
 
-    @extends('layouts.admin')
+@section('content2')
+    <div class="container">
+        <h2 class="fw-bold mb-4">Pengumuman</h2>
 
-    @section('content2')
-        <div class="container mt-4">
-            <h2 class="fw-bold mb-4">Pengumuman</h2>
-
-            <div class="col-lg-12">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">Pengumuman</div>
-                        <div class="card-body p-0">
-                            <div class="filter-bar">
-                                <div class="row g-2">
-                                    <div class="col-md-4 d-flex gap-2">
-                                        <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
-                                        <button class="btn btn-primary">Cari</button>
-                                    </div>                                                                        
-                                </div>
+        <div class="col-lg-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">Pengumuman</div>
+                    <div class="card-body p-0">
+                        <div class="filter-bar">
+                            <div class="row g-2">
+                                <div class="col-md-4 d-flex gap-2">
+                                    <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
+                                    <button class="btn btn-primary">Cari</button>
+                                </div>                                                                        
                             </div>
-                            <table class="table table-striped mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Tanggal</th>
-                                        <th>Judul Pengumuman</th>
-                                        <th>Kategori</th>
-                                        <th>Isi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>01-01-1970</td>
-                                        <td>Lorem ipsum dolor sit amet.</td>
-                                        <td>Kematian</td>
-                                        <td><button class="btn btn-primary">Cek</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>01-01-1970</td>
-                                        <td>Lorem ipsum dolor sit amet consectetur.</td>
-                                        <td>Berita</td>
-                                        <td><button class="btn btn-primary">Cek</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Tanggal</th>
+                                    <th>Judul Pengumuman</th>
+                                    <th>Kategori</th>
+                                    <th>Isi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01-01-1970</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>Kematian</td>
+                                    <td><button class="btn btn-primary">Cek</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01-01-1970</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                    <td>Berita</td>
+                                    <td><button class="btn btn-primary">Cek</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-        </div>
-    @endsection
-
-</body>
-</html>
+            </div>
+    </div>
+@endsection
