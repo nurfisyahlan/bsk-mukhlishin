@@ -21,11 +21,11 @@
     <div class="card shadow-sm mb-3">        
         <div class="card-body">
             <div class="filter-header">
-                    <input type="text" class="form-control" placeholder="Cari Pengumuman...">
-                    <button class="btn btn-search"><i class="bi bi-search"></i></button>
-                    <button class="btn btn-toggle"><i class="bi bi-list-ul"></i></button>
-                    <button class="btn btn-toggle"><i class="bi bi-grid-3x3-gap"></i></button>
-                </div>
+                <input type="text" class="form-control" placeholder="Cari Pengumuman...">
+                <button class="btn btn-search"><i class="bi bi-search"></i></button>
+                <button class="btn btn-toggle"><i class="bi bi-list-ul"></i></button>
+                <button class="btn btn-toggle"><i class="bi bi-grid-3x3-gap"></i></button>
+            </div>
             <h5 class="card-title fw-bold">Berita Duka: Alm. H. Ramli bin Abdullah</h5>
             <p class="card-text text-muted mb-1"><i class="bi bi-calendar-event"></i> 15 Agustus 2025</p>
             <p class="card-text text-muted"><i class="bi bi-geo-alt"></i> RT 02/RW 01 - Masjid Mukhlisin</p>
