@@ -15,17 +15,17 @@
                 <div class="card-header bg-primary text-light fw-bold">Rekap Saldo Masuk/Keluar</div>
                 <div class="card-body p-0">
                     <!-- Filter Bar -->
-                <div class="filter-bar p-3 bg-light border-bottom">
-                    <div class="row g-2">                        
-                        <div class="col-md-3">
-                            <select id="statusFilter" class="form-select">
-                                <option value="" hidden>Cek Saldo</option>
-                                <option value="masuk">Saldo Masuk</option>                                            
-                                <option value="keluar">Saldo Keluar</option>                                                                                                                    
-                            </select>
-                        </div>                                    
+                    <div class="filter-bar p-3 bg-light border-bottom">
+                        <div class="row g-2">                        
+                            <div class="col-md-3">
+                                <select id="statusFilter" class="form-select">
+                                    <option value="" hidden>Cek Saldo</option>
+                                    <option value="masuk">Saldo Masuk</option>                                            
+                                    <option value="keluar">Saldo Keluar</option>                                                                                                                    
+                                </select>
+                            </div>                                    
+                        </div>
                     </div>
-                </div>
                     <table class="table table-striped align-middle mb-0">
                         <thead class="table-primary">
                             <tr>

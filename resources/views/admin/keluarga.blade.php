@@ -17,9 +17,10 @@
                     <!-- Filter Bar -->
                     <div class="filter-bar p-3 bg-light border-bottom">
                         <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" id="searchInput" class="form-control" placeholder="Cari kepala keluarga...">
-                            </div>
+                            <div class="col-md-4 d-flex gap-2">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Cari kepala keluarga">
+                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                        </div>
                             <div class="col-md-3">
                                 <select id="statusFilter" class="form-select">
                                     <option value="">📍 RT/RW</option>

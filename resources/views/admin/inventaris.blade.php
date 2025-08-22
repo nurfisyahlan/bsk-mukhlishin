@@ -10,15 +10,15 @@
             </button>
         </h2>
         
-
         <div class="col-lg-12">
             <div class="card shadow-sm tinggi-card">
                 <div class="card-header bg-primary text-white fw-bold">Inventaris</div>
                 <!-- Filter Bar -->
                 <div class="filter-bar p-3 bg-light border-bottom">
                     <div class="row g-2">
-                        <div class="col-md-4">
-                            <input type="text" id="searchInput" class="form-control" placeholder="Cari Item">
+                        <div class="col-md-4 d-flex gap-2">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Cari item">
+                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
                         </div>
                         <div class="col-md-3">
                             <select id="statusFilter" class="form-select">
