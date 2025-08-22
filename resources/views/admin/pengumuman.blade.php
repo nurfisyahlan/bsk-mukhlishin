@@ -12,8 +12,8 @@
 
         <div class="col-lg-12">
             <div class="card shadow-sm tinggi-card">
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <span>Pengumuman</span>                    
+                <div class="card-header bg-primary text-white fw-bold">
+                    <i class="bi bi-broadcast"></i> Pengumuman
                 </div>
 
                 <!-- Filter Bar -->

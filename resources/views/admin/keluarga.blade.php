@@ -12,7 +12,9 @@
 
         <div class="col-lg-12">
             <div class="card shadow-sm tinggi-card">
-                <div class="card-header bg-primary text-white fw-bold">Data Keluarga</div>
+                <div class="card-header bg-primary text-white fw-bold">
+                    <i class="bi bi-people"></i> Data Keluarga
+                </div>
                 <div class="table-wrapper2">
                     <!-- Filter Bar -->
                     <div class="filter-bar p-3 bg-light border-bottom">

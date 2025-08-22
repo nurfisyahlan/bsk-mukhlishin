@@ -12,7 +12,9 @@
         
         <div class="col-lg-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-primary text-light fw-bold">Rekap Saldo Masuk/Keluar</div>
+                <div class="card-header bg-primary text-light fw-bold">
+                    <i class="bi bi-cash"></i> Rekap Saldo Masuk/Keluar
+                </div>
                 <div class="card-body p-0">
                     <!-- Filter Bar -->
                     <div class="filter-bar p-3 bg-light border-bottom">
