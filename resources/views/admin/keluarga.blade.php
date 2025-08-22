@@ -39,52 +39,79 @@
                             <thead class="table-primary sticky-top">
                                 <tr>
                                     <th>Kepala Keluarga</th>
-                                    <th>Jumlah Keluarga</th>
-                                    <th>Rincian</th>
+                                    <th>Jumlah Keluarga</th>                                    
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody id="familyTable">
                                 <tr>
-                                    <td>Contoh 1</td><td>5</td><td>info</td>
+                                    <td>Contoh 1</td>
+                                    <td>5</td>                                    
                                     <td>
+                                        <!-- Tombol Info -->
+                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
+                                        <!-- Tombol Edit -->
                                         <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
+                                        <!-- Tombol Delete -->
                                         <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Contoh 2</td><td>3</td><td>info</td>
+                                    <td>Contoh 2</td>
+                                    <td>3</td>                                    
                                     <td>
+                                        <!-- Tombol Info -->
+                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
+                                        <!-- Tombol Edit -->
                                         <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 2" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                        <!-- Tombol Delete -->
+                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Contoh 3</td><td>6</td><td>info</td>
+                                    <td>Contoh 3</td>
+                                    <td>6</td>                                    
                                     <td>
+                                        <!-- Tombol Info -->
+                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
+                                        <!-- Tombol Edit -->
                                         <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 3" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                        <!-- Tombol Delete -->
+                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Contoh 4</td><td>4</td><td>info</td>
+                                    <td>Contoh 4</td>
+                                    <td>4</td>
                                     <td>
+                                        <!-- Tombol Info -->
+                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
+                                        <!-- Tombol Edit -->
                                         <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 4" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                        <!-- Tombol Delete -->
+                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
@@ -128,6 +155,39 @@
         </div>
     </div>
     </div>
+
+    <!-- Modal Info -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="infoModalLabel">Detail Keluarga</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Contoh detail data keluarga -->
+            <ul class="list-group">
+            <li class="list-group-item"><strong>Kepala Keluarga:</strong> Contoh 1</li>
+            <li class="list-group-item"><strong>Jumlah Anggota:</strong> 5</li>
+            <li class="list-group-item"><strong>Alamat:</strong> RT 01/RW 04</li>
+            <li class="list-group-item"><strong>Rincian Anggota:</strong> 
+                <ul>
+                <li>Anggota 1 - Ayah</li>
+                <li>Anggota 2 - Ibu</li>
+                <li>Anggota 3 - Anak 1</li>
+                <li>Anggota 4 - Anak 2</li>
+                <li>Anggota 5 - Anak 3</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
 
     <!-- Modal Edit -->
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
