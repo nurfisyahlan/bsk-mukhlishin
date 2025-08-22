@@ -41,6 +41,10 @@ body {
     background-color: #666666;    
 }
 
+.bg-oren{
+    background-color: #e65c00;
+}
+
 #content {
     transition: all 0.3s;
 }
@@ -110,8 +114,7 @@ body {
 }
 
 .filter-bar {
-    background: white; /* biar nggak transparan saat scroll */
-    position: sticky;
+    background: white; /* biar nggak transparan saat scroll */    
     top: 0;
     z-index: 2;
     padding: 10px;

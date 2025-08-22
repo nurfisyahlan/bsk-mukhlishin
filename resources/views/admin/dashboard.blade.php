@@ -8,10 +8,10 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
                             <span><i class="bi bi-table"></i> Monitoring Pembayaran</span>
-                            <a href="{{ url('admin-monitoring-pembayaran') }}" class="btn btn-sm btn-light">
-                                Detail
+                            <a href="{{ url('admin-monitoring-pembayaran') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
                         <div class="table-wrapper">
@@ -61,10 +61,10 @@
                 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
                             <span><i class="bi bi-people"></i> Data Keluarga</span>
-                            <a href="{{ url('admin-keluarga') }}" class="btn btn-sm btn-light">
-                                Detail
+                            <a href="{{ url('admin-keluarga') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
                         <div class="table-wrapper">
@@ -115,10 +115,10 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
                             <span><i class="bi bi-cash"></i> Rekap Saldo</span>
-                            <a href="{{ url('admin-saldo') }}" class="btn btn-sm btn-light">
-                                Detail
+                            <a href="{{ url('admin-saldo') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -154,10 +154,10 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
                             <span><i class="bi bi-tools"></i> Inventaris</span>
-                            <a href="{{ url('admin-inventaris') }}" class="btn btn-sm btn-light">
-                                Detail
+                            <a href="{{ url('admin-inventaris') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -191,10 +191,10 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
                             <span><i class="bi bi-flag"></i> Kematian</span>
-                            <a href="{{ url('admin-kematian') }}" class="btn btn-sm btn-light">
-                                Detail
+                            <a href="{{ url('admin-kematian') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -228,10 +228,10 @@
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-grey text-white d-flex justify-content-between align-items-center">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
                             <span><i class="bi bi-broadcast"></i> Pengumuman</span>
-                            <a href="{{ url('admin-pengumuman') }}" class="btn btn-sm btn-light">
-                                Detail
+                            <a href="{{ url('admin-pengumuman') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
                         <div class="card-body p-3">
