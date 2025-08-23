@@ -14,7 +14,7 @@
             <div class="col-lg-12">
                 <div class="card shadow-sm border-0 tinggi-card">
                     <!-- Header -->
-                    <div class="card-header bg-primary text-white fw-bold">
+                    <div class="card-header bg-oren text-white fw-bold">
                         <i class="bi bi-table"></i> Monitoring Pembayaran
                     </div>
 

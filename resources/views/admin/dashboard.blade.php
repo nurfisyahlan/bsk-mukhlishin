@@ -243,8 +243,8 @@
                                         <td>Lorem ipsum dolor sit amet.</td>
                                         <td>Kematian</td>
                                         <td>
-                                            <button class="btn btn-primary">
-                                                <i class="fas fa-info"></i>
+                                            <button class="btn btn-detailinfo text-light">
+                                                Lihat isi
                                             </button>
                                         </td>
                                     </tr>                                    
