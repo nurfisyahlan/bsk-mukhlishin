@@ -105,8 +105,7 @@ body {
 
 .table-scroll2 table th,
 .table-scroll2 table td {
-    white-space: nowrap; /* teks tidak dibungkus */
-    padding: 6px 50px;
+    white-space: nowrap; /* teks tidak dibungkus */    padding: 6px 50px;
 }
 
 .table-scroll2 table th:first-child {
@@ -120,6 +119,29 @@ body {
     padding: 10px;
     border-bottom: 1px solid #dee2e6;
 }
+
+.btn-detailinfo{        
+    border-radius: 5px;
+    background-color: #e65c00;
+    border: none;
+}
+
+.btn-detailinfo:hover{        
+    background-color: #e65c00;
+    border: none;
+}
+
+.cari{
+    background-color: #e65c00;
+    border: none;        
+}
+
+.cari:hover{
+    background-color: #8a3700;
+    border: none;        
+}
+
+
 /* Footer */
 footer {
     background: #f8f9fa;

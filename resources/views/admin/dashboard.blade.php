@@ -20,7 +20,7 @@
                                 <div class="row g-2">
                                     <div class="col-md-6 d-flex gap-1">
                                         <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
-                                        <button class="btn btn-primary rounded-circle">
+                                        <button class="btn btn-primary rounded-circle cari">
                                             <i class="bi bi-search"></i>
                                         </button>
                                     </div>                                    
@@ -45,13 +45,11 @@
                                         </tr>
                                     </thead>
                                     <tbody id="paymentTable">
-                                        <tr><td>Contoh 1</td><td>Januari</td><td>Lunas</td></tr>
-                                        <tr><td>Contoh 2</td><td>Februari</td><td>Belum</td></tr>
-                                        <tr><td>Contoh 3</td><td>Maret</td><td>Lunas</td></tr>
-                                        <tr><td>Contoh 4</td><td>April</td><td>Belum</td></tr>
-                                        <tr><td>Contoh 5</td><td>Mei</td><td>Lunas</td></tr>
-                                        <tr><td>Contoh 6</td><td>Juni</td><td>Belum</td></tr>
-                                        <!-- Data panjang -->
+                                        <tr>
+                                            <td>Contoh 1</td>
+                                            <td>Januari</td>
+                                            <td>Lunas</td>
+                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -71,9 +69,12 @@
                             <!-- Filter Bar -->
                             <div class="filter-bar">
                                 <div class="row g-2">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 d-flex gap-1">
                                         <input type="text" id="searchInput" class="form-control" placeholder="Cari nama...">
-                                    </div>
+                                        <button class="btn btn-primary rounded-circle cari">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div> 
                                     <div class="col-md-3">
                                         <select id="statusFilter" class="form-select">
                                             <option value="">RT/RW</option>
@@ -98,14 +99,13 @@
                                         </tr>
                                     </thead>
                                     <tbody id="paymentTable">
-                                        <tr><td>Contoh 1</td><td>Januari</td><td>info</td></tr>
-                                        <tr><td>Contoh 2</td><td>Februari</td><td>info</td></tr>
-                                        <tr><td>Contoh 3</td><td>Maret</td><td>info</td></tr>
-                                        <tr><td>Contoh 4</td><td>April</td><td>info</td></tr>
-                                        <tr><td>Contoh 5</td><td>Mei</td><td>info</td></tr>
-                                        <tr><td>Contoh 6</td><td>Juni</td><td>info</td></tr>
-                                        <tr><td>Contoh 6</td><td>Juni</td><td>info</td></tr>
-                                        <!-- Data panjang -->
+                                        <tr>
+                                            <td>Contoh 1</td>
+                                            <td>Januari</td>
+                                            <td>
+                                                <button class="btn-detailinfo text-white">Info</button>
+                                            </td>                                                
+                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -139,13 +139,7 @@
                                         <td>Rp500.000</td>                                        
                                         <td>-</td>
                                         <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>03-08-2025</td>
-                                        <td>Biaya Pemakaman</td>
-                                        <td>-</td>                                        
-                                        <td>-</td>
-                                        <td>Rp300.000</td></tr>
+                                    </tr>                                
                                 </tbody>
                             </table>
                         </div>
@@ -172,17 +166,11 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Kain Kafan</td>
-                                        <td>10</td>
+                                        <td>Speaker Aktif</td>
+                                        <td>1</td>
                                         <td>Baik</td>
                                         <td>Tersedia</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kursi</td>
-                                        <td>20</td>
-                                        <td>Baik</td>
-                                        <td>Tidak Tersedia</td>
-                                    </tr>
+                                    </tr>                        
                                 </tbody>
                             </table>
                         </div>
@@ -213,13 +201,7 @@
                                         <td>Fulan</td>
                                         <td>12:45</td>
                                         <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>03-08-2025</td>
-                                        <td>Fulanah</td>
-                                        <td>20:01</td>
-                                        <td>-</td>
-                                    </tr>
+                                    </tr>                                   
                                 </tbody>
                             </table>
                         </div>
@@ -251,20 +233,10 @@
                                         <td>Kematian</td>
                                         <td>
                                             <button class="btn btn-primary">
-                                                <i class="fa-duotone fa-solid fa-info fa-xs"></i>
+                                                <i class="fas fa-info"></i>
                                             </button>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>01-01-1970</td>
-                                        <td>Lorem ipsum dolor sit amet consectetur.</td>
-                                        <td>Berita</td>
-                                        <td>
-                                            <button class="btn btn-primary">
-                                                <i class="fa-duotone fa-solid fa-info fa-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                                    </tr>                                    
                                 </tbody>
                             </table>
                         </div>
