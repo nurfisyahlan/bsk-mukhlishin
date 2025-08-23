@@ -66,10 +66,17 @@ body {
     flex-direction: column;
     height: 100%; /* tinggi tetap card */            
 }
+
 .table-scroll {
     flex: 1;
     overflow-y: auto; /* hanya bagian tabel yang scroll */            
     overflow-x: auto;
+    border: none;
+}
+
+.table-scroll .table th,
+.table-scroll .table td {
+    border: none !important;
 }
 
 .table-hover tbody tr:hover {
@@ -122,8 +129,10 @@ body {
 
 .btn-detailinfo{        
     border-radius: 5px;
+    padding: 3px 9px;
     background-color: #e65c00;
     border: none;
+    font-size:smaller;
 }
 
 .btn-detailinfo:hover{        

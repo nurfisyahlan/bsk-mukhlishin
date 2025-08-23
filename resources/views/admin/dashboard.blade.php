@@ -121,7 +121,18 @@
                                 <i class="bi bi-search"></i> Detail
                             </a>
                         </div>
-                        <div class="card-body p-3">
+                        <div class="filter-bar">
+                                <div class="row g-2">                                                                   
+                                    <div class="col-md-3">
+                                        <select id="statusFilter" class="form-select">
+                                            <option value="">Rekapan</option>
+                                            <option value="Lunas">Saldo Masuk</option>
+                                            <option value="Belum">Saldo Keluar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="table-scroll">
                             <table class="table table-striped mb-0">
                                 <thead>
                                     <tr>                                        
