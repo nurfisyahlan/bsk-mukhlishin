@@ -21,9 +21,9 @@
                         <div class="row g-2">
                             <div class="col-md-4 d-flex gap-2">
                             <input type="text" id="searchInput" class="form-control" placeholder="Cari kepala keluarga">
-                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                            <button class="btn btn-primary bg-oren"><i class="bi bi-search"></i></button>
                         </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <select id="statusFilter" class="form-select">
                                     <option value="">📍 RT/RW</option>
                                     <option value="01/04">01/04</option>                                            
@@ -41,15 +41,17 @@
                         <table class="table table-striped align-middle mb-0">
                             <thead class="table-primary sticky-top">
                                 <tr>
+                                    <th>Nomor Anggota</th>
                                     <th>Kepala Keluarga</th>
-                                    <th>Jumlah Keluarga</th>                                    
+                                    <th>Jumlah Orang</th>                                    
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody id="familyTable">
                                 <tr>
-                                    <td>Contoh 1</td>
-                                    <td>5</td>                                    
+                                    <td>001/BSK/I/2019</td>
+                                    <td>Drs. H. Ramli Khatib</td>
+                                    <td>2</td>                                    
                                     <td>
                                         <!-- Tombol Info -->
                                         <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
@@ -64,61 +66,7 @@
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>Contoh 2</td>
-                                    <td>3</td>                                    
-                                    <td>
-                                        <!-- Tombol Info -->
-                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
-                                            <i class="bi bi-info-circle"></i>
-                                        </button>
-                                        <!-- Tombol Edit -->
-                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                        <!-- Tombol Delete -->
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Contoh 3</td>
-                                    <td>6</td>                                    
-                                    <td>
-                                        <!-- Tombol Info -->
-                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
-                                            <i class="bi bi-info-circle"></i>
-                                        </button>
-                                        <!-- Tombol Edit -->
-                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                        <!-- Tombol Delete -->
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Contoh 4</td>
-                                    <td>4</td>
-                                    <td>
-                                        <!-- Tombol Info -->
-                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
-                                            <i class="bi bi-info-circle"></i>
-                                        </button>
-                                        <!-- Tombol Edit -->
-                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                        <!-- Tombol Delete -->
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Contoh 1" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                    </td>
-                                </tr>
+                                </tr>                                
                             </tbody>
                         </table>
                     </div>
@@ -137,31 +85,31 @@
         </div>
         <div class="modal-body">
             <form>
-            <div class="mb-3 d-flex gap-5">
-                <label class="form-label">Nomor Anggota</label>                
-                <label class="form-label">... / BSK / ... / 2025</label>                
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Kepala Keluarga</label>
-                <input type="text" class="form-control" placeholder="Masukkan nama kepala keluarga...">
-            </div>
-            <div class="mb-3 d-flex gap-2">
-                <div class="col-md-7">
-                    <label class="form-label">Anggota Keluarga 1</label>
-                    <input type="text" class="form-control" placeholder="Masukkan nama keluarga...">
-                </div>            
-                <div class="col-md-5">
-                    <label class="form-label">Hubungan</label>
-                    <select class="form-select">
-                        <option value="" hidden >Pilih hubungan</option>
-                        <option value="istri">Istri</option>
-                        <option value="anak">Anak</option>
-                    </select>
+                <div class="mb-3 d-flex gap-5">
+                    <label class="form-label">Nomor Anggota</label>                
+                    <label class="form-label">... / BSK / ... / 2025</label>                
                 </div>
-            </div>            
-            <div class="mb-3">
-                <button class="btn-tambahkeluarga text-light">Tambah Anggota Keluarga</button>
-            </div>            
+                <div class="mb-3">
+                    <label class="form-label">Kepala Keluarga</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama kepala keluarga...">
+                </div>
+                <div class="mb-3 d-flex gap-2">
+                    <div class="col-md-7">
+                        <label class="form-label">Anggota Keluarga 1</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama keluarga...">
+                    </div>            
+                    <div class="col-md-5">
+                        <label class="form-label">Hubungan</label>
+                        <select class="form-select">
+                            <option value="" hidden >Pilih hubungan</option>
+                            <option value="istri">Istri</option>
+                            <option value="anak">Anak</option>
+                        </select>
+                    </div>
+                </div>            
+                <div class="mb-3">
+                    <button class="btn-tambahkeluarga text-light">Tambah Anggota Keluarga</button>
+                </div>            
             </form>
         </div>
         <div class="modal-footer">
@@ -183,16 +131,13 @@
         <div class="modal-body">
             <!-- Contoh detail data keluarga -->
             <ul class="list-group">
+            <li class="list-group-item"><strong>Nomor Anggota:</strong> 001/BSK/I/2019</li>
             <li class="list-group-item"><strong>Kepala Keluarga:</strong> Contoh 1</li>
             <li class="list-group-item"><strong>Jumlah Anggota:</strong> 5</li>
             <li class="list-group-item"><strong>Alamat:</strong> RT 01/RW 04</li>
-            <li class="list-group-item"><strong>Rincian Anggota:</strong> 
+            <li class="list-group-item"><strong>Anggota keluarga:</strong> 
                 <ul>
-                <li>Anggota 1 - Ayah</li>
-                <li>Anggota 2 - Ibu</li>
-                <li>Anggota 3 - Anak 1</li>
-                <li>Anggota 4 - Anak 2</li>
-                <li>Anggota 5 - Anak 3</li>
+                <li>Anggota 1 - Istri</li>                
                 </ul>
             </li>
             </ul>
@@ -215,18 +160,31 @@
         </div>
         <div class="modal-body">
             <form>
-            <div class="mb-3">
-                <label class="form-label">Kepala Keluarga</label>
-                <input type="text" class="form-control" value="Contoh 1">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Jumlah Keluarga</label>
-                <input type="number" class="form-control" value="5">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Rincian</label>
-                <textarea class="form-control" rows="2">info</textarea>
-            </div>
+                <div class="mb-3 d-flex gap-5">
+                    <label class="form-label">Nomor Anggota</label>                
+                    <label class="form-label">... / BSK / ... / 2025</label>                
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Kepala Keluarga</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama kepala keluarga...">
+                </div>
+                <div class="mb-3 d-flex gap-2">
+                    <div class="col-md-7">
+                        <label class="form-label">Anggota Keluarga 1</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama keluarga...">
+                    </div>            
+                    <div class="col-md-5">
+                        <label class="form-label">Hubungan</label>
+                        <select class="form-select">
+                            <option value="" hidden >Pilih hubungan</option>
+                            <option value="istri">Istri</option>
+                            <option value="anak">Anak</option>
+                        </select>
+                    </div>
+                </div>            
+                <div class="mb-3">
+                    <button class="btn-tambahkeluarga text-light">Tambah Anggota Keluarga</button>
+                </div>            
             </form>
         </div>
         <div class="modal-footer">
