@@ -137,18 +137,31 @@
         </div>
         <div class="modal-body">
             <form>
+            <div class="mb-3 d-flex gap-5">
+                <label class="form-label">Nomor Anggota</label>                
+                <label class="form-label">... / BSK / ... / 2025</label>                
+            </div>
             <div class="mb-3">
                 <label class="form-label">Kepala Keluarga</label>
                 <input type="text" class="form-control" placeholder="Masukkan nama kepala keluarga...">
             </div>
+            <div class="mb-3 d-flex gap-2">
+                <div class="col-md-7">
+                    <label class="form-label">Anggota Keluarga 1</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama keluarga...">
+                </div>            
+                <div class="col-md-5">
+                    <label class="form-label">Hubungan</label>
+                    <select class="form-select">
+                        <option value="" hidden >Pilih hubungan</option>
+                        <option value="istri">Istri</option>
+                        <option value="anak">Anak</option>
+                    </select>
+                </div>
+            </div>            
             <div class="mb-3">
-                <label class="form-label">Jumlah Keluarga</label>
-                <input type="number" class="form-control" placeholder="Masukkan jumlah keluarga...">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Rincian</label>
-                <textarea class="form-control" rows="2" placeholder="Masukkan rincian..."></textarea>
-            </div>
+                <button class="btn-tambahkeluarga text-light">Tambah Anggota Keluarga</button>
+            </div>            
             </form>
         </div>
         <div class="modal-footer">
