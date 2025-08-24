@@ -59,13 +59,7 @@
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>03-08-2025</td>
-                                    <td>Fulanah</td>
-                                    <td>09:45</td>
-                                    <td>-</td>
-                                </tr>
+                                </tr>                                
                             </tbody>
                         </table>
                     </div>
@@ -84,18 +78,20 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="mb-3">
-                <label class="form-label">Tanggal</label>
-                <input type="date" class="form-control">
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-7">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">Jam</label>
+                  <input type="time" class="form-control">
+                </div>
               </div>
               <div class="mb-3">
                 <label class="form-label">Nama Anggota Keluarga</label>
                 <input type="text" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Jam</label>
-                <input type="time" class="form-control">
-              </div>
+              </div>              
               <div class="mb-3">
                 <label class="form-label">Status</label>
                 <select class="form-select">
@@ -123,23 +119,25 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="mb-3">
-                <label class="form-label">Tanggal</label>
-                <input type="date" class="form-control" value="2025-08-01">
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-7">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">Jam</label>
+                  <input type="time" class="form-control">
+                </div>
               </div>
               <div class="mb-3">
                 <label class="form-label">Nama Anggota Keluarga</label>
-                <input type="text" class="form-control" value="Fulan">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Jam</label>
-                <input type="time" class="form-control" value="17:02">
-              </div>
+                <input type="text" class="form-control">
+              </div>              
               <div class="mb-3">
                 <label class="form-label">Status</label>
                 <select class="form-select">
                     <option value="sudah">Sudah Diberikan</option>
-                    <option value="belum" selected>Belum Diberikan</option>
+                    <option value="belum">Belum Diberikan</option>
                 </select>
               </div>
             </form>
