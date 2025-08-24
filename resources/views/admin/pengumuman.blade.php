@@ -94,21 +94,24 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="mb-3">
-                <label class="form-label">Tanggal</label>
-                <input type="date" class="form-control">
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-5">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-7">
+                  <label class="form-label">Kategori</label>
+                  <select class="form-select">
+                      <option value="kematian">Pilih Kategori</option>
+                      <option value="kematian">Kematian</option>
+                      <option value="berita">Berita</option>
+                  </select>
+                </div>
               </div>
               <div class="mb-3">
                 <label class="form-label">Judul</label>
                 <input type="text" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Kategori</label>
-                <select class="form-select">
-                    <option value="kematian">Kematian</option>
-                    <option value="berita">Berita</option>
-                </select>
-              </div>
+              </div>              
               <div class="mb-3">
                 <label class="form-label">Isi</label>
                 <textarea class="form-control" rows="3"></textarea>
@@ -151,24 +154,27 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="mb-3">
-                <label class="form-label">Tanggal</label>
-                <input type="date" class="form-control" value="2025-08-01">
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-5">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-7">
+                  <label class="form-label">Kategori</label>
+                  <select class="form-select">
+                      <option value="kematian">Pilih Kategori</option>
+                      <option value="kematian">Kematian</option>
+                      <option value="berita">Berita</option>
+                  </select>
+                </div>
               </div>
               <div class="mb-3">
                 <label class="form-label">Judul</label>
-                <input type="text" class="form-control" value="Pengumuman Kematian Alm. H. Ramli">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Kategori</label>
-                <select class="form-select">
-                    <option value="kematian" selected>Kematian</option>
-                    <option value="berita">Berita</option>
-                </select>
-              </div>
+                <input type="text" class="form-control">
+              </div>              
               <div class="mb-3">
                 <label class="form-label">Isi</label>
-                <textarea class="form-control" rows="3">Innalillahi wa inna ilaihi raji'un...</textarea>
+                <textarea class="form-control" rows="3"></textarea>
               </div>
             </form>
           </div>
