@@ -57,21 +57,7 @@
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>Kursi</td>
-                                    <td>20</td>
-                                    <td>Baik</td>
-                                    <td>Tidak Tersedia</td>
-                                    <td>
-                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Kursi" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                    </td>
-                                </tr>
+                                </tr>                                
                             </tbody>
                         </table>
                     </div>
@@ -94,24 +80,26 @@
                 <label class="form-label">Nama Barang</label>
                 <input type="text" class="form-control" placeholder="Masukkan nama barang...">
               </div>
-              <div class="mb-3">
-                <label class="form-label">Jumlah</label>
-                <input type="number" class="form-control" placeholder="0">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Kondisi</label>
-                <select class="form-select">
-                    <option value="Baik">Baik</option>
-                    <option value="Rusak">Rusak</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Status</label>
-                <select class="form-select">
-                    <option value="Tersedia">Tersedia</option>
-                    <option value="Tidak Tersedia">Tidak Tersedia</option>
-                </select>
-              </div>
+              <div class="mb-3 d-flex gap-1 justify-content-center">
+                <div class="col-md-3">
+                  <label class="form-label">Jumlah</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Kondisi</label>
+                  <select class="form-select">
+                      <option value="Baik">Baik</option>
+                      <option value="Rusak">Rusak</option>
+                  </select>
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">Status</label>
+                  <select class="form-select">
+                      <option value="Tersedia">Tersedia</option>
+                      <option value="Tidak Tersedia">Tidak Tersedia</option>
+                  </select>
+                </div>
+              </div>              
             </form>
           </div>
           <div class="modal-footer">
@@ -134,26 +122,28 @@
             <form>
               <div class="mb-3">
                 <label class="form-label">Nama Barang</label>
-                <input type="text" class="form-control" value="Kain Kafan">
+                <input type="text" class="form-control" placeholder="Masukkan nama barang...">
               </div>
-              <div class="mb-3">
-                <label class="form-label">Jumlah</label>
-                <input type="number" class="form-control" value="10">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Kondisi</label>
-                <select class="form-select">
-                    <option value="Baik" selected>Baik</option>
-                    <option value="Rusak">Rusak</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Status</label>
-                <select class="form-select">
-                    <option value="Tersedia" selected>Tersedia</option>
-                    <option value="Tidak Tersedia">Tidak Tersedia</option>
-                </select>
-              </div>
+              <div class="mb-3 d-flex gap-1 justify-content-center">
+                <div class="col-md-3">
+                  <label class="form-label">Jumlah</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Kondisi</label>
+                  <select class="form-select">
+                      <option value="Baik">Baik</option>
+                      <option value="Rusak">Rusak</option>
+                  </select>
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">Status</label>
+                  <select class="form-select">
+                      <option value="Tersedia">Tersedia</option>
+                      <option value="Tidak Tersedia">Tidak Tersedia</option>
+                  </select>
+                </div>
+              </div>              
             </form>
           </div>
           <div class="modal-footer">

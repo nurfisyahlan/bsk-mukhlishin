@@ -19,7 +19,7 @@
                     <!-- Filter Bar -->
                     <div class="filter-bar p-3 bg-light border-bottom">
                         <div class="row g-2">                        
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <select id="statusFilter" class="form-select">
                                     <option value="" hidden>Cek Saldo</option>
                                     <option value="masuk">Saldo Masuk</option>                                            
