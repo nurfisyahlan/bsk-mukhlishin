@@ -11,7 +11,7 @@
         </h2>
         
         <div class="col-lg-12">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm tinggi-card">
                 <div class="card-header bg-oren text-light fw-bold">
                     <i class="bi bi-cash"></i> Rekap Saldo Masuk/Keluar
                 </div>
@@ -32,15 +32,20 @@
                         <thead class="table-primary">
                             <tr>
                                 <th>Tanggal</th>
-                                <th>Keterangan</th>
+                                <th>Uraian</th>
                                 <th>Masuk</th>
                                 <th>Keluar</th>
+                                <th>Saldo Terkini</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>01-08-2025</td><td>Iuran Bulanan</td><td>Rp500.000</td><td>-</td>
+                                <td>01-08-2025</td>
+                                <td>Iuran Bulanan</td>
+                                <td>Rp500.000</td>
+                                <td>Rp1.500.000</td>
+                                <td>-</td>
                                 <td>
                                     <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                         <i class="bi bi-pencil-square"></i>
@@ -49,18 +54,7 @@
                                         <i class="bi bi-trash"></i>
                                     </button>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>03-08-2025</td><td>Biaya Pemakaman</td><td>-</td><td>Rp300.000</td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-sm btn-delete" data-name="Biaya Pemakaman" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
+                            </tr>                            
                         </tbody>
                     </table>
                 </div>
@@ -78,21 +72,34 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="mb-3">
-                <label class="form-label">Tanggal</label>
-                <input type="date" class="form-control">
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-4">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-control">
+                </div>
+
+                <div class="col-md-8">
+                  <label class="form-label">Pilih jenis Saldo</label>
+                  <select class="form-select">                      
+                      <option value="masuk">Saldo Masuk</option>
+                      <option value="keluar">Saldo Keluar</option>
+                  </select>
+                </div>                
+              </div>
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-2">
+                  <label class="form-label">Nominal</label>
+                  <input type="text" class="form-control" placeholder="Rp.">
+                </div>
+
+                <div class="col-md-10">
+                  <label class="form-label"> Jumlah</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
               </div>
               <div class="mb-3">
-                <label class="form-label">Keterangan</label>
-                <input type="text" class="form-control" placeholder="Masukkan keterangan...">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Masuk</label>
-                <input type="number" class="form-control" placeholder="Rp0">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Keluar</label>
-                <input type="number" class="form-control" placeholder="Rp0">
+                <label class="form-label">Uraian</label>
+                <input type="text" class="form-control" placeholder="Tuliskan Uraian...">
               </div>
             </form>
           </div>
@@ -114,21 +121,34 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="mb-3">
-                <label class="form-label">Tanggal</label>
-                <input type="date" class="form-control" value="2025-08-01">
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-4">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-control">
+                </div>
+
+                <div class="col-md-8">
+                  <label class="form-label">Pilih jenis Saldo</label>
+                  <select class="form-select">                      
+                      <option value="masuk">Saldo Masuk</option>
+                      <option value="keluar">Saldo Keluar</option>
+                  </select>
+                </div>                
+              </div>
+              <div class="mb-3 d-flex gap-2">
+                <div class="col-md-2">
+                  <label class="form-label">Nominal</label>
+                  <input type="text" class="form-control" placeholder="Rp.">
+                </div>
+
+                <div class="col-md-10">
+                  <label class="form-label"> Jumlah</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
               </div>
               <div class="mb-3">
-                <label class="form-label">Keterangan</label>
-                <input type="text" class="form-control" value="Iuran Bulanan">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Masuk</label>
-                <input type="number" class="form-control" value="500000">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Keluar</label>
-                <input type="number" class="form-control" value="0">
+                <label class="form-label">Uraian</label>
+                <input type="text" class="form-control" placeholder="Tuliskan Uraian...">
               </div>
             </form>
           </div>
