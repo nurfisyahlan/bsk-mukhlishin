@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-md-3">
                             <select id="statusFilter" class="form-select">
-                                <option value="" hidden>Status</option>
+                                <option value="" hidden>Status Santunan</option>
                                 <option value="tersedia">Sudah Diberikan</option>                                            
                                 <option value="tidaktersedia">Belum diberikan</option>                                                                                                                    
                             </select>
@@ -39,7 +39,7 @@
                                     <th>Tanggal</th>
                                     <th>Nama Anggota Keluarga</th>
                                     <th>Jam</th>
-                                    <th>Status</th>
+                                    <th>Status Santunan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -93,7 +93,7 @@
                 <input type="text" class="form-control">
               </div>              
               <div class="mb-3">
-                <label class="form-label">Status</label>
+                <label class="form-label">Status Santunan</label>
                 <select class="form-select">
                     <option value="sudah">Sudah Diberikan</option>
                     <option value="belum">Belum Diberikan</option>
@@ -134,7 +134,7 @@
                 <input type="text" class="form-control">
               </div>              
               <div class="mb-3">
-                <label class="form-label">Status</label>
+                <label class="form-label">Status Santunan</label>
                 <select class="form-select">
                     <option value="sudah">Sudah Diberikan</option>
                     <option value="belum">Belum Diberikan</option>
