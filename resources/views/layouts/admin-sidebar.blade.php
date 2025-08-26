@@ -9,6 +9,9 @@
             <a class="nav-link {{ Request::is('admin-monitoring-pembayaran') ? 'active' : '' }}" href="{{ url('admin-monitoring-pembayaran') }}">
                 Monitoring Pembayaran
             </a>
+            <a class="nav-link {{ Request::is('admin-kutipan') ? 'active' : '' }}" href="{{ url('admin-kutipan') }}">
+                Kutipan
+            </a>
             <a class="nav-link {{ Request::is('admin-keluarga') ? 'active' : '' }}" href="{{ url('admin-keluarga') }}">
                 Keluarga
             </a>

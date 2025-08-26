@@ -3,7 +3,7 @@
 @section('content2')
     <div class="container">
         <h2 class="fw-bold mb-4 d-flex justify-content-between align-items-center">
-            Kematian
+            Kutipan
             <!-- Tombol Create -->
             <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">
                 <i class="bi bi-plus-circle"></i> Tambah Data
@@ -13,43 +13,41 @@
         <div class="col-lg-12">
             <div class="card shadow-sm tinggi-card">
                 <div class="card-header bg-oren text-white fw-bold">
-                    <i class="bi bi-flag"></i> Kematian
+                    <i class="bi bi-flag"></i> Kutipan
                 </div>
                 <!-- Filter Bar -->
                 <div class="filter-bar p-3 bg-light border-bottom">
                     <div class="row g-2">
-                        <div class="col-md-4 d-flex gap-2">
-                            <input type="text" id="searchInput" class="form-control" placeholder="Cari nama anggota keluarga">
-                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
-                        </div>
                         <div class="col-md-3">
                             <select id="statusFilter" class="form-select">
-                                <option value="" hidden>Status Santunan</option>
-                                <option value="tersedia">Sudah Diberikan</option>                                            
-                                <option value="tidaktersedia">Belum diberikan</option>                                                                                                                    
+                                <option value="" hidden>Pilih Kutipan</option>
+                                <option value="kutipan">Kutipan I</option>                                                                            
                             </select>
                         </div>                                    
                     </div>
                 </div>
-                <div class="table-wrapper2">
+                <div class="table-scroll">
                     <div class="card-body p-0">
                         <table class="table table-striped mb-0">
                             <thead class="table-primary">
                                 <tr>
                                     <th>Tanggal</th>
-                                    <th>Nama Anggota Keluarga</th>
-                                    <th>Jam</th>
-                                    <th>Status Santunan</th>
+                                    <th>Kutipan</th>
+                                    <th>Total Terkumpul</th>
+                                    <th>Tanggal Setor</th>                                    
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>01-08-2025</td>
-                                    <td>Fulan</td>
-                                    <td>17:02</td>
-                                    <td><span class="badge bg-warning text-dark">Belum Diberikan</span></td>
+                                    <td>xx-xx-xxxx s.d. xx-xx-xxxx</td>
+                                    <td>Kutipan I</td>                                    
+                                    <td>xx-xx-xxxx</td>
+                                    <td></td>
                                     <td>
+                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
                                         <!-- Tombol Edit -->
                                         <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pencil-square"></i>
@@ -66,6 +64,35 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Modal Info -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="infoModalLabel">Detail Keluarga</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Contoh detail data keluarga -->
+            <ul class="list-group">
+            <li class="list-group-item"><strong>Nomor Anggota:</strong> 001/BSK/I/2019</li>
+            <li class="list-group-item"><strong>Kepala Keluarga:</strong> Contoh 1</li>
+            <li class="list-group-item"><strong>Jumlah Anggota:</strong> 5</li>
+            <li class="list-group-item"><strong>Alamat:</strong> RT 01/RW 04</li>
+            <li class="list-group-item"><strong>Anggota keluarga:</strong> 
+                <ul>
+                <li>Anggota 1 - Istri</li>                
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+        </div>
+    </div>
     </div>
 
     <!-- Modal Create -->
