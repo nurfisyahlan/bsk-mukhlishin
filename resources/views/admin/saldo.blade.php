@@ -15,48 +15,50 @@
                 <div class="card-header bg-oren text-light fw-bold">
                     <i class="bi bi-cash"></i> Rekap Saldo Masuk/Keluar
                 </div>
-                <div class="card-body p-0">
-                    <!-- Filter Bar -->
-                    <div class="filter-bar p-3 bg-light border-bottom">
-                        <div class="row g-2">                        
-                            <div class="col-md-2">
-                                <select id="statusFilter" class="form-select">
-                                    <option value="" hidden>Cek Saldo</option>
-                                    <option value="masuk">Saldo Masuk</option>                                            
-                                    <option value="keluar">Saldo Keluar</option>                                                                                                                    
-                                </select>
-                            </div>                                    
-                        </div>
-                    </div>
-                    <table class="table table-striped align-middle mb-0">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>Tanggal</th>
-                                <th>Uraian</th>
-                                <th>Masuk</th>
-                                <th>Keluar</th>
-                                <th>Saldo Terkini</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>01-08-2025</td>
-                                <td>Iuran Bulanan</td>
-                                <td>Rp500.000</td>
-                                <td>Rp1.500.000</td>
-                                <td>-</td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-sm btn-delete" data-name="Iuran Bulanan" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>                            
-                        </tbody>
-                    </table>
+                <div class="table-scroll">
+                  <div class="card-body p-0">
+                      <!-- Filter Bar -->
+                      <div class="filter-bar p-3 bg-light border-bottom">
+                          <div class="row g-2">                        
+                              <div class="col-md-2">
+                                  <select id="statusFilter" class="form-select">
+                                      <option value="" hidden>Cek Saldo</option>
+                                      <option value="masuk">Saldo Masuk</option>                                            
+                                      <option value="keluar">Saldo Keluar</option>                                                                                                                    
+                                  </select>
+                              </div>                                    
+                          </div>
+                      </div>
+                      <table class="table table-striped align-middle mb-0">
+                          <thead class="table-primary">
+                              <tr>
+                                  <th>Tanggal</th>
+                                  <th>Uraian</th>
+                                  <th>Masuk</th>
+                                  <th>Keluar</th>
+                                  <th>Saldo Terkini</th>
+                                  <th>Aksi</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>01-08-2025</td>
+                                  <td>Iuran Bulanan</td>
+                                  <td>Rp500.000</td>
+                                  <td>Rp1.500.000</td>
+                                  <td>-</td>
+                                  <td>
+                                      <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                                          <i class="bi bi-pencil-square"></i>
+                                      </button>
+                                      <button class="btn btn-danger btn-sm btn-delete" data-name="Iuran Bulanan" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <i class="bi bi-trash"></i>
+                                      </button>
+                                  </td>
+                              </tr>                            
+                          </tbody>
+                      </table>
+                  </div>
                 </div>
             </div>
         </div>
@@ -86,17 +88,13 @@
                   </select>
                 </div>                
               </div>
-              <div class="mb-3 d-flex gap-2">
-                <div class="col-md-2">
-                  <label class="form-label">Nominal</label>
-                  <input type="text" class="form-control" placeholder="Rp.">
-                </div>
-
-                <div class="col-md-10">
-                  <label class="form-label"> Jumlah</label>
-                  <input type="text" class="form-control" placeholder="">
-                </div>
-              </div>
+              <div class="mb-3">
+                  <label class="form-label">Total Terkumpul</label>
+                  <div class="input-group">
+                      <span class="input-group-text">Rp.</span>
+                      <input type="number" class="form-control" placeholder="Masukkan jumlah total">
+                  </div>
+              </div>              
               <div class="mb-3">
                 <label class="form-label">Uraian</label>
                 <input type="text" class="form-control" placeholder="Tuliskan Uraian...">
@@ -135,16 +133,12 @@
                   </select>
                 </div>                
               </div>
-              <div class="mb-3 d-flex gap-2">
-                <div class="col-md-2">
-                  <label class="form-label">Nominal</label>
-                  <input type="text" class="form-control" placeholder="Rp.">
-                </div>
-
-                <div class="col-md-10">
-                  <label class="form-label"> Jumlah</label>
-                  <input type="text" class="form-control" placeholder="">
-                </div>
+              <div class="mb-3">
+                  <label class="form-label">Total Terkumpul</label>
+                  <div class="input-group">
+                      <span class="input-group-text">Rp.</span>
+                      <input type="number" class="form-control" placeholder="Masukkan jumlah total">
+                  </div>
               </div>
               <div class="mb-3">
                 <label class="form-label">Uraian</label>

@@ -34,51 +34,53 @@
                 </div>
 
                 <!-- Tabel -->
-                <div class="card-body p-0">
-                    <table class="table table-striped mb-0 align-middle">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>Tanggal</th>
-                                <th>Judul</th>
-                                <th>Kategori</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>01-08-2025</td>
-                                <td>Pengumuman Kematian Alm. H. Ramli</td>
-                                <td><span class="badge bg-danger">Kematian</span></td>
-                                <td>
-                                    <button class="btn btn-primary btn-sm btn-detail" data-bs-toggle="modal" data-bs-target="#detailModal" data-judul="Pengumuman Kematian Alm. H. Ramli" data-isi="Innalillahi wa inna ilaihi raji'un. Telah meninggal dunia Alm. H. Ramli bin Abdullah pada tanggal 01-08-2025.">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                    <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-sm btn-delete" data-name="Pengumuman Kematian Alm. H. Ramli" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>03-08-2025</td>
-                                <td>Pengumuman Santunan BSK</td>
-                                <td><span class="badge bg-info text-dark">Berita</span></td>
-                                <td>
-                                    <button class="btn btn-primary btn-sm btn-detail" data-bs-toggle="modal" data-bs-target="#detailModal" data-judul="Pengumuman Santunan BSK" data-isi="Santunan untuk keluarga Alm. H. Ramli akan diberikan pada tanggal 05-08-2025 bertempat di Masjid Mukhlishin.">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                    <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-sm btn-delete" data-name="Pengumuman Santunan BSK" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="table-scroll">
+                  <div class="card-body p-0">
+                      <table class="table table-striped mb-0 align-middle">
+                          <thead class="table-primary">
+                              <tr>
+                                  <th>Tanggal</th>
+                                  <th>Judul</th>
+                                  <th>Kategori</th>
+                                  <th>Aksi</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>01-08-2025</td>
+                                  <td>Pengumuman Kematian Alm. H. Ramli</td>
+                                  <td><span class="badge bg-danger">Kematian</span></td>
+                                  <td>
+                                      <button class="btn btn-primary btn-sm btn-detail" data-bs-toggle="modal" data-bs-target="#detailModal" data-judul="Pengumuman Kematian Alm. H. Ramli" data-isi="Innalillahi wa inna ilaihi raji'un. Telah meninggal dunia Alm. H. Ramli bin Abdullah pada tanggal 01-08-2025.">
+                                          <i class="bi bi-eye"></i>
+                                      </button>
+                                      <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                                          <i class="bi bi-pencil-square"></i>
+                                      </button>
+                                      <button class="btn btn-danger btn-sm btn-delete" data-name="Pengumuman Kematian Alm. H. Ramli" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <i class="bi bi-trash"></i>
+                                      </button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>03-08-2025</td>
+                                  <td>Pengumuman Santunan BSK</td>
+                                  <td><span class="badge bg-info text-dark">Berita</span></td>
+                                  <td>
+                                      <button class="btn btn-primary btn-sm btn-detail" data-bs-toggle="modal" data-bs-target="#detailModal" data-judul="Pengumuman Santunan BSK" data-isi="Santunan untuk keluarga Alm. H. Ramli akan diberikan pada tanggal 05-08-2025 bertempat di Masjid Mukhlishin.">
+                                          <i class="bi bi-eye"></i>
+                                      </button>
+                                      <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                                          <i class="bi bi-pencil-square"></i>
+                                      </button>
+                                      <button class="btn btn-danger btn-sm btn-delete" data-name="Pengumuman Santunan BSK" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <i class="bi bi-trash"></i>
+                                      </button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
                 </div>
             </div>
         </div>

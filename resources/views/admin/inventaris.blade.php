@@ -31,7 +31,7 @@
                         </div>                                    
                     </div>
                 </div>
-                <div class="table-wrapper2">
+                <div class="table-scroll">
                     <div class="card-body p-0">
                         <table class="table table-striped align-middle mb-0">
                             <thead class="table-primary">
