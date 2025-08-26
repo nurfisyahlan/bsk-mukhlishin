@@ -42,6 +42,10 @@ Route::get('/admin-keluarga', function () {
     return view('admin/keluarga');
 });
 
+Route::get('/admin-kutipan', function () {
+    return view('admin/kutipan');
+});
+
 Route::get('/admin-inventaris', function () {
     return view('admin/inventaris');
 });
