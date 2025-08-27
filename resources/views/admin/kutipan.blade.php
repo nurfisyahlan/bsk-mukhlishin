@@ -246,7 +246,7 @@
         <h2 class="fw-bold mb-4 d-flex justify-content-between align-items-center">
             Periode Kutipan
             <!-- Tombol Create -->
-            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#createModalperiode">
                 <i class="bi bi-plus-circle"></i> Tambah Data
             </button>
         </h2>
@@ -286,15 +286,15 @@
                                     <td>xx-xx-xxxx</td>
                                     <td></td>
                                     <td>
-                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModalperiode">
                                             <i class="bi bi-info-circle"></i>
                                         </button>
                                         <!-- Tombol Edit -->
-                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModalperiode">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
                                         <!-- Tombol Delete -->
-                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Fulan" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                        <button class="btn btn-danger btn-sm btn-delete" data-name="Fulan" data-bs-toggle="modal" data-bs-target="#deleteModalperiode">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
@@ -305,13 +305,13 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal Info Kutipan -->
-        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal fade" id="infoModalperiode" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
               <div class="modal-header bg-info text-white">
-                  <h5 class="modal-title" id="infoModalLabel">Detail Kutipan</h5>
+                  <h5 class="modal-title" id="infoModalLabel">Detail Periode</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
               <div class="modal-body">
@@ -340,11 +340,11 @@
 
 
         <!-- Modal Create -->
-        <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+        <div class="modal fade" id="createModalperiode" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title" id="createModalLabel">Tambah Data Kutipan</h5>
+                <h5 class="modal-title" id="createModalLabel">Tambah Data Periode</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
               <div class="modal-body">
@@ -363,7 +363,7 @@
 
                     <!-- 2. Kutipan -->
                     <div class="mb-3">
-                        <label class="form-label">Kutipan</label>
+                        <label class="form-label">Periode</label>
                         <input type="text" class="form-control" value="Kutipan 1" readonly>
                     </div>
 
@@ -393,11 +393,11 @@
         </div>
 
         <!-- Modal Edit -->
-        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal fade" id="editModalperiode" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header bg-warning">
-                <h5 class="modal-title" id="editModalLabel">Edit Data Kutipan</h5>
+                <h5 class="modal-title" id="editModalLabel">Edit Data Periode</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
               <div class="modal-body">
@@ -405,7 +405,7 @@
                     <!-- 1. Tanggal Periode Kutipan -->
                     <div class="mb-3 d-flex gap-2">
                         <div class="col-md-6">
-                        <label class="form-label">Tanggal Mulai Periode Kutipan</label>
+                        <label class="form-label">Tanggal Mulai Periode Periode</label>
                         <input type="date" class="form-control">
                         </div>
                         <div class="col-md-6">
@@ -414,10 +414,10 @@
                         </div>
                     </div>
 
-                    <!-- 2. Kutipan -->
+                    <!-- 2. Periode -->
                     <div class="mb-3">
-                        <label class="form-label">Kutipan</label>
-                        <input type="text" class="form-control" value="Kutipan 1" readonly>
+                        <label class="form-label">Periode</label>
+                        <input type="text" class="form-control" value="Periode 1" readonly>
                     </div>
 
                     <!-- 3. Total Terkumpul -->
@@ -445,7 +445,7 @@
         </div>
 
         <!-- Modal Delete -->
-        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteModalperiode" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header bg-danger text-white">
