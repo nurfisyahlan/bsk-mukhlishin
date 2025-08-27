@@ -23,13 +23,7 @@
                                 <option value="" hidden>Pilih Periode</option>
                                 <option value="kutipan">Periode I</option>                                                                            
                             </select>
-                        </div>                                    
-                        <div class="col-md-3">
-                            <select id="statusFilter" class="form-select">
-                                <option value="" hidden>Pilih Kutipan</option>
-                                <option value="kutipan">Kutipan I</option>                                                                            
-                            </select>
-                        </div>                                    
+                        </div>                                                                                             
                     </div>
                 </div>
                 <div class="table-scroll">
@@ -39,7 +33,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Tanggal</th>                                    
-                                    <th>Total Terkumpul</th>                                                                
+                                    <th>Total Terkumpul</th>                                                                                                    
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -48,10 +42,7 @@
                                     <td>1</td>
                                     <td>xx-xx-xxxx</td>                                                       
                                     <td>xxx.xxx</td>                                    
-                                    <td>
-                                        <button class="btn btn-info btn-sm text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
-                                            <i class="bi bi-info-circle"></i>
-                                        </button>
+                                    <td>                                        
                                         <!-- Tombol Edit -->
                                         <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                             <i class="bi bi-pencil-square"></i>
@@ -68,38 +59,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal Info Kutipan -->
-        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-                <h5 class="modal-title" id="infoModalLabel">Detail Kutipan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <ul class="list-group">
-                <li class="list-group-item">
-                    <strong>Periode Kutipan:</strong> 01 Agustus 2025 - 31 Agustus 2025
-                </li>
-                <li class="list-group-item">
-                    <strong>Kutipan:</strong> Kutipan 1
-                </li>
-                <li class="list-group-item">
-                    <strong>Total Terkumpul: </strong>
-                    <span>Rp. 1.500.000</span>
-                </li>
-                <li class="list-group-item">
-                    <strong>Tanggal Setor:</strong> 02 September 2025
-                </li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-            </div>
-            </div>
-        </div>
-        </div>
+        
 
 
         <!-- Modal Create -->
@@ -113,15 +73,9 @@
               <div class="modal-body">
                 <form>
                     <!-- 1. Tanggal Periode Kutipan -->
-                    <div class="mb-3 d-flex gap-2">
-                        <div class="col-md-6">
-                        <label class="form-label">Tanggal Mulai Periode Kutipan</label>
-                        <input type="date" class="form-control">
-                        </div>
-                        <div class="col-md-6">
-                        <label class="form-label">Tanggal Akhir Periode Kutipan</label>
-                        <input type="date" class="form-control">
-                        </div>
+                    <div class="mb-3  ">                        
+                        <label class="form-label">Tanggal</label>
+                        <input type="date" class="form-control">                        
                     </div>
 
                     <!-- 2. Kutipan -->
@@ -137,13 +91,7 @@
                             <span class="input-group-text">Rp.</span>
                             <input type="number" class="form-control" placeholder="Masukkan jumlah total">
                         </div>
-                    </div>
-
-                    <!-- 4. Tanggal Setor -->
-                    <div class="mb-3">
-                        <label class="form-label">Tanggal Setor</label>
-                        <input type="date" class="form-control">
-                    </div>
+                    </div>                    
                 </form>
 
               </div>
@@ -166,15 +114,9 @@
               <div class="modal-body">
                 <form>
                     <!-- 1. Tanggal Periode Kutipan -->
-                    <div class="mb-3 d-flex gap-2">
-                        <div class="col-md-6">
-                        <label class="form-label">Tanggal Mulai Periode Kutipan</label>
-                        <input type="date" class="form-control">
-                        </div>
-                        <div class="col-md-6">
-                        <label class="form-label">Tanggal Akhir Periode Kutipan</label>
-                        <input type="date" class="form-control">
-                        </div>
+                    <div class="mb-3  ">                        
+                        <label class="form-label">Tanggal</label>
+                        <input type="date" class="form-control">                        
                     </div>
 
                     <!-- 2. Kutipan -->
@@ -190,13 +132,7 @@
                             <span class="input-group-text">Rp.</span>
                             <input type="number" class="form-control" placeholder="Masukkan jumlah total">
                         </div>
-                    </div>
-
-                    <!-- 4. Tanggal Setor -->
-                    <div class="mb-3">
-                        <label class="form-label">Tanggal Setor</label>
-                        <input type="date" class="form-control">
-                    </div>
+                    </div>                    
                 </form>
               </div>
               <div class="modal-footer">
@@ -364,7 +300,7 @@
                     <!-- 2. Kutipan -->
                     <div class="mb-3">
                         <label class="form-label">Periode</label>
-                        <input type="text" class="form-control" value="Kutipan 1" readonly>
+                        <input type="text" class="form-control" value="Periode 1" readonly>
                     </div>
 
                     <!-- 3. Total Terkumpul -->
