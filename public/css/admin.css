@@ -10,18 +10,51 @@ body {
 
 /* Sidebar */
 #sidebar {
-    min-width: 260px;
-    max-width: 260px;
+    width: 260px;
     min-height: 100vh;
     background: #343a40;
     color: #fff;
     transition: all 0.3s;
+    position: fixed;  /* biar sidebar tetap */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* kalau isi sidebar panjang */
+    z-index: 1000;    /* biar nggak ketiban konten */
 }
+
 #sidebar .nav-link {
     color: #fff;
 }
+
+/* Mode collapsed */
 #sidebar.collapsed {
     margin-left: -260px;
+}
+
+/* Content default geser sejajar sidebar */
+#content {
+    margin-left: 260px;   /* sama dengan lebar sidebar */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+/* Kalau sidebar dicollapse, konten geser ke kiri */
+#sidebar.collapsed + #content {
+    margin-left: 0;
+}
+
+/* Bagian konten utama (content2) bisa discroll */
+#content .container {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 20px; /* biar ada jarak sama footer */
+}
+
+/* Footer tetap di bawah */
+#content footer {
+    flex-shrink: 0;
 }
 
 .navbar-custom {
