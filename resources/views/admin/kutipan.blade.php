@@ -178,7 +178,7 @@
         </script>
     </div>  
 
-    <div class="container mt-4">
+    <div class="container mt-4" id="periodekutipan">
         <h2 class="fw-bold mb-4 d-flex justify-content-between align-items-center">
             Periode Kutipan
             <!-- Tombol Create -->

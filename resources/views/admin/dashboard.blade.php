@@ -111,8 +111,86 @@
                             </div>
                         </div>
                     </div>
+                </div>        
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
+                            <span><i class="bi bi-cash"></i> Kutipan</span>
+                            <a href="{{ url('admin-kutipan#periodekutipan') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
+                            </a>
+                        </div>
+                        <div class="filter-bar">
+                                <div class="row g-2">                                                                   
+                                    <div class="col-md-4">
+                                        <select id="statusFilter" class="form-select">
+                                            <option value="" hidden>Pilih Periode</option>
+                                            <option value="kutipan">Periode I</option>                                                                            
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="table-scroll">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Tanggal</th>
+                                        <th>Total Terkumpul</th>                                                                                                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>                   
+                                        <td>1</td>                     
+                                        <td>xx-xx-xxxx</td>                     
+                                        <td>xxx.xxx</td>                     
+                                    </tr>                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
+                            <span><i class="bi bi-cash"></i> Periode</span>
+                            <a href="{{ url('admin-kutipan#periodekutipan') }}" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-search"></i> Detail
+                            </a>
+                        </div>
+                        <div class="filter-bar">
+                                <div class="row g-2">                                                                   
+                                    <div class="col-md-4">
+                                        <select id="statusFilter" class="form-select">
+                                            <option value="" hidden>Pilih Periode</option>
+                                            <option value="kutipan">Periode I</option>                                                                            
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="table-scroll">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Tanggal Periode</th>                                                                                
+                                        <th>Total Tekumpul</th>                                                                                
+                                        <th>Tanggal Setor</th>                                                                                
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>    
+                                        <td>xx-xx-xxxx</td>                                    
+                                        <td>x.xxx.xxx</td>                                    
+                                        <td>xx-xx-xxxx</td>                                    
+                                    </tr>                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
                         <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
