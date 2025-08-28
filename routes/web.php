@@ -65,3 +65,13 @@ Route::get('/admin-kematian', function () {
 Route::get('/admin-pengumuman', function () {
     return view('admin/pengumuman');
 });
+
+// Halaman Login
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+// Halaman Register
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');

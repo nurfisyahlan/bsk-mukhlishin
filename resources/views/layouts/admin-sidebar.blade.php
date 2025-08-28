@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <div id="sidebar" class="bg-dark">
     <div class="p-2">
-        <h4 class="text-white mt-2 text-center">BSK Dashboard</h4>
+        <h4 class="text-white mt-2 p-2">BSK Dashboard</h4>
         <nav class="nav flex-column pt-3">
             <a class="nav-link {{ Request::is('admin-dashboard') ? 'active' : '' }}" href="{{ url('admin-dashboard') }}">
                 Beranda
