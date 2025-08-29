@@ -474,10 +474,7 @@
                         <option value="" hidden>Pilih Kutipan</option>
                         <option value="kutipan">Kutipan I</option>                                                                            
                     </select>
-                  </div>                 
-                  <div class="col-md-2 d-flex align-items-end">
-                    <button class="btn btn-success w-100"><i class="bi bi-search"></i> Cari</button>
-                  </div>
+                  </div>                                  
                 </div>
 
                 <!-- Tabel Periode -->
