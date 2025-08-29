@@ -18,7 +18,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="fw-bold text-center flex-grow-1">Laporan Keuangan</h2>
-                <button class="btn btn-primary btn-sm ms-3" data-bs-toggle="modal" data-bs-target="#periodeModal">
+                <button class="btn btn-primary btn-sm ms-3" data-bs-toggle="modal" data-bs-target="#cekperiode">
                     <i class="bi bi-calendar-range"></i> Cek Periode
                 </button>
             </div>
@@ -58,7 +58,7 @@
 
 
         <!-- Modal Periode -->
-        <div class="modal fade" id="periodeModal" tabindex="-1" aria-labelledby="periodeModalLabel" aria-hidden="true">
+        <div class="modal fade" id="cekperiode" tabindex="-1" aria-labelledby="periodeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header bg-primary text-white">
@@ -70,13 +70,11 @@
                 <!-- Filter Periode -->
                 <div class="row mb-3">
                   <div class="col-md-5">
-                    <label class="form-label">Dari Tanggal</label>
-                    <input type="date" class="form-control">
-                  </div>
-                  <div class="col-md-5">
-                    <label class="form-label">Sampai Tanggal</label>
-                    <input type="date" class="form-control">
-                  </div>
+                    <select id="statusFilter" class="form-select">
+                        <option value="" hidden>Pilih Periode</option>
+                        <option value="kutipan">Periode I</option>                                                                            
+                    </select>
+                  </div>                 
                   <div class="col-md-2 d-flex align-items-end">
                     <button class="btn btn-success w-100"><i class="bi bi-search"></i> Cari</button>
                   </div>
