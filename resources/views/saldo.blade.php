@@ -52,6 +52,10 @@
                             </tr>
                         </tbody>
                     </table>
+                    <!-- Tulisan cek saldo di kanan bawah tabel -->
+                    <div class="text-end mt-2">
+                        <strong class="fw-bold text-secondary">Jumlah Saldo Terkini: Rp. xx.xxx.xxx</strong>
+                    </div>                   
                 </div>
             </div>
         </div>
@@ -61,7 +65,7 @@
         <div class="modal fade" id="cekperiode" tabindex="-1" aria-labelledby="periodeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
-              <div class="modal-header bg-primary text-white">
+              <div class="modal-header bg-oren text-white">
                 <h5 class="modal-title" id="periodeModalLabel">Laporan Berdasarkan Periode</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
