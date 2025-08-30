@@ -116,7 +116,7 @@
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
                         <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
-                            <span><i class="bi bi-cash"></i> Kutipan</span>
+                            <span><i class="bi bi-bookmark-check"></i> Kutipan</span>
                             <a href="{{ url('admin-kutipan#periodekutipan') }}" class="btn btn-sm btn-outline-light">
                                 <i class="bi bi-search"></i> Detail
                             </a>
@@ -155,7 +155,7 @@
                 <div class="col-lg-6">
                     <div class="card shadow-sm">
                         <div class="card-header bg-oren text-white d-flex justify-content-between align-items-center">
-                            <span><i class="bi bi-cash"></i> Periode</span>
+                            <span><i class="bi bi-clock"></i> Periode</span>
                             <a href="{{ url('admin-kutipan#periodekutipan') }}" class="btn btn-sm btn-outline-light">
                                 <i class="bi bi-search"></i> Detail
                             </a>

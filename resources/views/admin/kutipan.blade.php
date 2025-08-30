@@ -190,7 +190,7 @@
         <div class="col-lg-12">
             <div class="card shadow-sm tinggi-card">
                 <div class="card-header bg-oren text-white fw-bold">
-                    <i class="bi bi-bookmark-check"></i> Kutipan
+                    <i class="bi bi-clock"></i> Periode Kutipan
                 </div>
                 <!-- Filter Bar -->
                 <div class="filter-bar p-3 bg-light border-bottom">
