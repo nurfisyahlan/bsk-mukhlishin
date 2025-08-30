@@ -150,7 +150,7 @@
         </div>
 
         <!-- Section Tentang -->
-        <div class="mt-5 pt-5" id="tentang">
+        <div class="" id="tentang">
         <div class="row align-items-center">
             <!-- Kiri: Teks Tentang -->
             <div class="col-md-7">

@@ -3,6 +3,13 @@ body {
     background-color: white;    
 }
 
+.navbar-custom {
+    position: sticky; /* atau fixed */
+    top: 0;
+    z-index: 1000; /* biar nggak ketutup elemen lain */
+    background-color: transparent;
+}
+
 .nav-link {
     color: #e65c00;
     font-weight: 500;
@@ -285,6 +292,6 @@ nav.d-flex {
 
 
 #tentang{
-    margin-top:250px;
+    margin-top:150px;
     margin-bottom: 100px;
 }
