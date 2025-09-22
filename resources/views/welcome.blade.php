@@ -16,12 +16,12 @@
     @section('content')
         <div class="">
             <!-- Header -->
-            <div class="mb-3">
+            <div class="mb-2">
                 <h2 class="mb-0 fw-bold">Badan Sosial Kematian</h2>
-                <h5 class="text-secondary">Masjid Mukhlisin</h5>
+                <h5 class="text-secondary">Masjid Mukhlishin</h5>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 ">
                 <!-- Left: Search Box -->
                 <div class="col-md-6">
                     <div class="search-box mb-4">
@@ -35,7 +35,7 @@
 
                 <!-- Right: Info Cards -->
                 <div class="col-md-6" >
-                    <div class="d-flex gap-4 text-center">
+                    <div class="d-flex gap-3 text-center info-data">
                         <div>
                             <h4>150+</h4>
                             <p>KK</p>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
 
-                    <div class="row g-3 mb-2 justify-content-end">
+                    <div class="row g-3 mb-2 justify-content-end align-items-start ">
                         <div class="col-6">
                             <a href="/monitoring-pembayaran" style="color:black; text-decoration:none;">
                                 <div class="info-card">
@@ -155,7 +155,7 @@
             <!-- Kiri: Teks Tentang -->
             <div class="col-md-7">
             <h4 class="fw-bold">Tentang</h4>
-            <h3 class="fw-bold">Badan Sosial Kematian <br>Masjid Mukhlisin</h3>
+            <h3 class="fw-bold">Badan Sosial Kematian <br>Masjid Mukhlishin</h3>
             <p style="color: #e65c00; font-size: 14px;">
                 disingkat BSK, adalah sebuah badan di dalam kepengurusan Masjid Mukhlisin 
                 untuk menangani urusan kematian dari anggota yang terdaftar, ditanggung dengan 
@@ -177,6 +177,47 @@
             </div>
         </div>
         </div>
+
+        <!-- Footer / Contact -->
+        <footer id="contact" class="mt-5 pt-4 pb-3" style="background:#f8f9fa; border-top: 1px solid #ddd;">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <!-- Kiri: Identitas -->
+                    <div class="col-md-6 mb-3">
+                        <h5 class="fw-bold mb-1">Badan Sosial Kematian</h5>
+                        <p class="text-secondary mb-1">Masjid Mukhlishin</p>
+                        <p class="mb-0" style="font-size:14px;">
+                            Jl. Cempaka No. 104, Padang Bulan<br>
+                            Pekanbaru, Riau
+                        </p>
+                    </div>
+
+                    <!-- Kanan: Kontak -->
+                    <div class="col-md-6 mb-3 text-md-end">
+                        <h6 class="fw-bold">Hubungi Kami</h6>
+                        <p class="mb-1">
+                            <i class="fa-solid fa-phone me-2 text-success"></i> 
+                            Call Center: <strong>0812-3456-7890</strong>
+                        </p>
+                        <p class="mb-1">
+                            <i class="fa-brands fa-whatsapp me-2 text-success"></i> 
+                            WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a>
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-envelope me-2 text-danger"></i> 
+                            Email: <a href="mailto:bsk.mukhlishin@gmail.com">bsk.mukhlishin@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="text-center" style="font-size: 13px; color:#666;">
+                    &copy; {{ date('Y') }} BSK Masjid Mukhlishin. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+
 
     @endsection    
 

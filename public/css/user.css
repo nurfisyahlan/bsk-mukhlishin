@@ -60,7 +60,7 @@ nav.d-flex {
     transition: 0.3s;
 
     /* tambahan biar rata & sama tinggi */
-    min-height: 120px;            /* atur sesuai kebutuhan */
+    min-height: 100px;            /* atur sesuai kebutuhan */
     display: flex;
     flex-direction: column;
     justify-content: center;      /* rata tengah vertikal */
