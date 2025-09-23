@@ -83,7 +83,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div style="padding-top:15px;">
                         Saldo Kas BSK (per ..../..../....)<br>
                         <span class="saldo-text">Rp. xx.xxx.xxx</span>
                     </div>

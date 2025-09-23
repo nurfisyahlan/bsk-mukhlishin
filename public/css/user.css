@@ -32,7 +32,7 @@ nav.d-flex {
     border: 2px solid #e65c00;
     border-radius: 15px;
     padding: 15px;
-    height: 350px;
+    height: 365px;
 }
 
 .search-input {
@@ -60,7 +60,7 @@ nav.d-flex {
     transition: 0.3s;
 
     /* tambahan biar rata & sama tinggi */
-    min-height: 100px;            /* atur sesuai kebutuhan */
+    min-height: 120px;            /* atur sesuai kebutuhan */
     display: flex;
     flex-direction: column;
     justify-content: center;      /* rata tengah vertikal */
