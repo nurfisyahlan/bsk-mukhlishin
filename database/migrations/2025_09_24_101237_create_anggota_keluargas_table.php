@@ -13,18 +13,17 @@ return new class extends Migration
     {
         Schema::create('anggota_keluargas', function (Blueprint $table) {
             $table->id('id_anggota');
-
-            $table->unsignedInteger('id_keluarga');
+            $table->unsignedInteger('id_keluarga'); // kolom FK
 
             $table->string('nama_anggota');
             $table->enum('hubungan', ['Istri', 'Anak']);
             $table->timestamps();
 
-            // Set FK
+            // Set foreign key
             $table->foreign('id_keluarga')
-                  ->references('id_keluarga')
-                  ->on('keluargas')
-                  ->onDelete('cascade');
+                  ->references('id_keluarga') // kolom di tabel keluargas
+                  ->on('keluargas')           // tabel tujuan
+                  ->onDelete('cascade');      // kalau keluarga dihapus, anggota ikut kehapus
         });
     }
 

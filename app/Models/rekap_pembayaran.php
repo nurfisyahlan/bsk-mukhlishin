@@ -5,33 +5,33 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Pembayaran extends Model
+class RekapPembayaran extends Model
 {
     use HasFactory;
 
     // Nama tabel
-    protected $table = 'pembayarans';
+    protected $table = 'rekap_pembayarans';
 
     // Primary Key
-    protected $primaryKey = 'id_pembayaran';
+    protected $primaryKey = 'id_rekap';
 
-    // Apakah PK auto increment
+    // PK auto increment
     public $incrementing = true;
 
-    // Tipe data PK
+    // Tipe PK
     protected $keyType = 'int';
 
     // Kolom yang bisa diisi mass-assignment
     protected $fillable = [
         'id_keluarga',
-        'tahun',
-        'bulan',
+        'tunggakan',
+        'terbilang',
         'status',
     ];
 
     /**
      * Relasi ke model Keluarga
-     * Satu pembayaran dimiliki oleh satu keluarga
+     * Satu rekap pembayaran dimiliki oleh satu keluarga
      */
     public function keluarga()
     {

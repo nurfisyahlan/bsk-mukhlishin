@@ -9,20 +9,23 @@ class Keluarga extends Model
 {
     use HasFactory;
 
-    protected $table = 'keluargas'; 
-    protected $primaryKey = 'id_keluarga'; 
+    // Nama tabel
+    protected $table = 'keluargas';
+
+    // Primary Key
+    protected $primaryKey = 'id_keluarga';
+
+    // Apakah PK auto increment
     public $incrementing = true;
+
+    // Tipe data PK
     protected $keyType = 'int';
 
+    // Kolom yang bisa diisi mass-assignment
     protected $fillable = [
         'nama_kk',
         'alamat',
         'rt_rw',
+        'no_hp',
     ];
-
-    public function anggotakeluargas()
-    {
-        return $this->hasMany(AnggotaKeluarga::class, 'id_keluarga', 'id_keluarga');
-    }
 }
-
